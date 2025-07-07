@@ -1,9 +1,33 @@
 @import "tailwindcss";
 
 @theme {
-    --color-dark-pink: #8F788D;
-    --color-light-pink: #E4D6DA;
-    --color-pink: #D180AC;
-    --color-black: #545F71;
-    --color-white: #F4F7FE;
+    --font-display: "Inter", sans-serif;
+    --color-primary: #3D3A4B;
+    --color-accent: #A78BFA;
+    --color-bg: #F4F3EF;
+    --color-surface: #EAE4F2;
+    --color-text: #2E2A32;
+}
+
+@layer components {
+  .typography {
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 400;
+      color: var(--color-text, #2E2A32);
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--color-primary, #3D3A4B);
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--color-primary, #3D3A4B);
+    }
+  }
 }
