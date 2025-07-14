@@ -1,765 +1,1434 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
+  <title>Kathy's Portfolio</title>
 </head>
+
 <body class="bg-bg">
 
-  <!-- banner -->
-  <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
-    <div class="absolute top-1/2 left-[max(-7rem,calc(50%-52rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-      <div class="aspect-577/310 w-[36.0625rem] bg-linear-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
-    </div>
-    <div class="absolute top-1/2 left-[max(45rem,calc(50%+8rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-      <div class="aspect-577/310 w-[36.0625rem] bg-linear-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
-    </div>
-    <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-      <p class="text-sm/6 text-gray-900">
-        <strong class="font-semibold">Hi there!</strong> I'm available for new opportunities!
-      </p>
-      <a href="#" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Contact Me <span aria-hidden="true">&rarr;</span></a>
-    </div>
-    <div class="flex flex-1 justify-end">
-      <!-- <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
-        <span class="sr-only">Dismiss</span>
-        <svg class="size-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-          <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-        </svg>
-      </button> -->
-    </div>
-  </div>
-  
-
   <!-- nav bar -->
-  <nav class="bg-primary">
+  <nav class="gradient-bg">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-start">
+
         <div class="sm:hidden order-2">
           <!-- Mobile menu button-->
-          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
+          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-bg focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
             <span class="absolute -inset-0.5"></span>
             <span class="sr-only">Open main menu</span>
-            <!--
-              Icon when menu is closed.
-  
-              Menu open: "hidden", Menu closed: "block"
-            -->
             <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
-            <!--
-              Icon when menu is open.
-  
-              Menu open: "block", Menu closed: "hidden"
-            -->
             <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
+
         <div class="flex flex-1 sm:items-stretch sm:justify-start">
           <!-- LOGO -->
           <div class="flex shrink-0 items-center">
             <img class="h-15 w-auto" src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/logo.png?updatedAt=1751707814297" alt="KathleenDP_Logo">
           </div>
         </div>
+
         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
-              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-surface hover:bg-accent hover:text-surface">About</a>
-              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-surface hover:bg-accent hover:text-surface">Projects</a>
-              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-surface hover:bg-accent hover:text-surface">Contact</a>
-              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-surface hover:bg-gray-700 hover:text-surface bg-accent">Resume</a>
+              <a href="#about" class="rounded-md px-3 py-2 text-sm font-medium text-surface hover:bg-accent hover:text-surface">About</a>
+              <a href="#works" class="rounded-md px-3 py-2 text-sm font-medium text-surface hover:bg-accent hover:text-surface">Projects</a>
+              <a href="#contact" class="rounded-md px-3 py-2 text-sm font-medium text-surface hover:bg-accent hover:text-surface">Contact</a>
+              <a href="/resume.pdf" target="_blank" class="rounded-md px-3 py-2 text-sm font-medium text-surface hover:bg-gray-700 hover:text-surface bg-accent">Resume</a>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="sm:hidden" id="mobile-menu">
       <div class="space-y-1 px-2 pt-2 pb-3">
-        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-surface hover:bg-accent hover:text-surface">About</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-surface hover:bg-accent hover:text-surface">Projects</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-surface hover:bg-accent hover:text-surface">Contact</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-surface hover:bg-accent hover:text-surface bg-pink">Resume</a>
+        <!-- Current: "bg-gray-900 text-bg", Default: "text-gray-300 hover:bg-gray-700 hover:text-bg" -->
+        <a href="#about" class="block rounded-md px-3 py-2 text-base font-medium text-surface hover:bg-accent hover:text-surface">About</a>
+        <a href="#works" class="block rounded-md px-3 py-2 text-base font-medium text-surface hover:bg-accent hover:text-surface">Projects</a>
+        <a href="#contact" class="block rounded-md px-3 py-2 text-base font-medium text-surface hover:bg-accent hover:text-surface">Contact</a>
+        <a href="/resume.pdf" class="block rounded-md px-3 py-2 text-base font-medium text-surface hover:bg-accent hover:text-surface bg-pink">Resume</a>
       </div>
     </div>
   </nav>
 
   <!-- header -->
-<div class="relative overflow-hidden bg-cover bg-no-repeat p-12" style="background-image: url('https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/HeroBanner.png?updatedAt=1751707814769'); height: 650px;">
-  <div class="absolute inset-0 h-full w-full bg-fixed bg-transparent">
-    <div class="flex h-full items-center justify-start mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      
-      <!-- Text + Button Wrapper -->
-      <div class="text-left space-y-4">
-        <h2 class="text-4xl font-semibold text-primary">
-          Hi, I’m Kathleen Javier,
-        </h2>
-        <h2 class="text-4xl font-semibold text-accent">
-          Front-End Developer & QA Analyst
-        </h2>
-        <h4 class="text-xl font-semibold text-primary max-w-xl">
-          Transforming ideas into reality while ensuring your website is bug-free and functions flawlessly.
-        </h4>
-        <button
-          type="button"
-          class="rounded border-2 border-accent px-7 bg-accent pb-[8px] pt-[10px] text-sm font-medium uppercase hover:text-white hover:bg-primary">
-          Connect with me!
-        </button>
+  <header class="relative hero-bg min-h-screen flex items-center justify-center">
+      <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
+          <div class="flex min-h-screen items-center justify-start">
+              
+              <div class="hero-content text-left space-y-6 max-w-2xl">   
+                  <!-- Status Indicator -->
+                  <div class="animate-fade-in-up flex items-center space-x-2 mb-4">
+                      <div class="w-3 h-3 bg-green-500 rounded-full pulse-dot"></div>
+                      <span class="text-sm font-medium text-primary">Available for new projects</span>
+                  </div>
+                  
+                  <!-- Main Heading -->
+                  <div class="animate-fade-in-up-delay-1">
+                      <h1 class="text-5xl lg:text-6xl font-bold text-primary mb-2">
+                          <span class="text-primary">Kathleen Javier</span>
+                      </h1>
+                  </div>
+                  
+                  <!-- Subheading -->
+                  <div class="animate-fade-in-up-delay-2">
+                      <h2 class="text-3xl lg:text-4xl font-semibold mb-6 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                          Front-End Developer & QA Analyst
+                      </h2>
+                  </div>
+                  
+                  <!-- Description -->
+                  <div class="animate-fade-in-up-delay-2">
+                      <p class="text-xl text-primary max-w-xl leading-relaxed mb-8">
+                          Transforming ideas into reality while ensuring your website is 
+                          <span class="font-bold text-primary">bug-free</span> and functions 
+                          <span class="font-bold text-accent">flawlessly</span>.
+                      </p>
+                  </div>
+                  
+                  <!-- Enhanced Button Group -->
+                  <div class="animate-fade-in-up-delay-3 flex flex-col sm:flex-row gap-4">
+                      <button
+                          type="button"
+                          class="btn-enhanced rounded-full border-2 border-accent px-8 py-4 bg-accent text-bg font-semibold uppercase tracking-wide hover:bg-text hover:border-primary transition-all duration-300">
+                          Connect with me!
+                      </button>
+                      
+                      <button
+                          type="button"
+                          class="btn-enhanced rounded-full border-2 border-text px-8 py-4 bg-text text-bg font-semibold uppercase tracking-wide hover:bg-accent hover:border-accent transition-all duration-300l">
+                          View My Work
+                      </button>
+                  </div>
+                  
+                  <!-- Quick Stats -->
+                  <div class="animate-fade-in-up-delay-3 flex flex-wrap gap-8 mt-12 pt-8 border-t border-primary border-opacity-30">
+                      <div class="text-center">
+                          <div class="text-2xl font-bold text-primary">50+</div>
+                          <div class="text-sm text-primary">Projects Completed</div>
+                      </div>
+                      <div class="text-center">
+                          <div class="text-2xl font-bold text-accent">3+</div>
+                          <div class="text-sm text-primary">Years Experience</div>
+                      </div>
+                      <div class="text-center">
+                          <div class="text-2xl font-bold text-primary">100%</div>
+                          <div class="text-sm text-primary">Client Satisfaction</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-
-    </div>
-  </div>
-</div>
-
+  </header>
 
   <!-- about me -->
-  <section class="mx-auto mt-11 max-w-7xl px-4 sm:px-6 lg:px-8 bg-bg">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-      <!-- image -->
-      <div class="flex justify-center">
-        <img 
-          src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/Portrait%20(2).png?updatedAt=1751707816175" 
-          alt="Photo of Kathleen" 
-          class="w-60 h-60 md:w-72 md:h-96 object-cover rounded-xl shadow-md" 
-        />
-      </div>
+  <section id="about" class="relative mx-auto mt-11 max-w-7xl px-4 sm:px-6 lg:px-8 py-16 overflow-hidden contact-card rounded-2xl">
+      <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <!-- Profile Image -->
+          <div class="flex justify-center">
+              <div class="relative p-6 rounded-2xl border border-white/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                  <div class="profile-image relative rounded-xl overflow-hidden">
+                      <img 
+                          src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/Portrait%20(2).png?updatedAt=1752397078167" 
+                          alt="Photo of Kathleen" 
+                          class="w-60 h-60 md:w-72 md:h-96 object-cover transition-transform duration-500 hover:scale-105 relative z-0" 
+                      />
+                  </div>
+              </div>
+          </div>
 
-      <!-- content -->
-      <div class="typography space-y-6">
-        <h2 class="text-accent font-bold mb-0">About me</h2>
-        <h1 class="text-primary mb-0">Who's Kathy?</h1>
-        <p class="text-primary">A committed learner and hands-on contributor with a passion for building useful, reliable, and user-friendly digital experiences.</p>
+          <!-- Content -->
+          <div class="relative space-y-8">
+              <!-- Left Border Animation -->
+              <div class="absolute top-0 -left-8 w-1 h-0 bg-gradient-to-b from-blue-500 to-blue-700 rounded-full transition-all duration-1000 content-line"></div>
+              
+              <!-- Header -->
+              <div class="translate-y-5 transition-all duration-500 stagger-1 animate-in">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-accent font-medium text-sm mb-4">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                    About me
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">
+                    Who's 
+                    <span class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                        Kathy?
+                    </span>
+                </h1>
+                <p class="text-lg text-primary max-w-2xl mx-auto leading-relaxed">
+                  A committed learner and hands-on contributor with a passion for building useful, reliable, and user-friendly digital experiences.
+                </p>
+              </div>
 
-        <ul class="space-y-4">
-          <li class="flex items-start gap-4">
-            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-surface flex items-center justify-center">
-              <i data-lucide="code" class="w-5 h-5 text-accent"></i>
-            </div>
-            <p class="text-base">
-              I enjoy working on front-end projects where I can build clean, responsive interfaces. I'm always learning ways to improve the user experience through design and structure.
-            </p>
-          </li>
-          <li class="flex items-start gap-4">
-            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-surface flex items-center justify-center">
-              <i data-lucide="circle-check-big" class="w-5 h-5 text-accent"></i>
-            </div>
-            <p class="text-base">
-              In QA, I focus on writing automated and manual test scripts that help catch issues early. I’ve had the opportunity to use tools like Playwright and Testomat.io to help teams deliver more confidently.
-            </p>
-          </li>
-          <li class="flex items-start gap-4">
-            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-surface flex items-center justify-center">
-              <i data-lucide="handshake" class="w-5 h-5 text-accent"></i>
-            </div>
-            <p class="text-base">
-              I value being part of cross-functional teams where I can support both development and testing efforts. I try to be dependable, detail-oriented, and mindful of how each task impacts the bigger picture.
-            </p>
-          </li>
-        </ul>
+              <!-- Features -->
+              <div class="space-y-6">
+                  <!-- Front-end Development -->
+                  <div class="feature-item opacity-0 translate-y-5 transition-all duration-500 stagger-2 animate-in relative p-6 rounded-2xl border border-blue-100/50 bg-white/80 backdrop-blur-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-300/50">
+                      <div class="relative flex items-start gap-4">
+                          <div class="icon-ripple relative flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-blue-100/50 to-blue-200/50 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:from-blue-200/70 hover:to-blue-300/70">
+                              <i data-lucide="code" class="w-6 h-6 text-accent relative z-10"></i>
+                          </div>
+                          <div class="flex-1">
+                              <h3 class="font-semibold text-primary text-lg mb-2">Front-end Development</h3>
+                              <p class="text-primary leading-relaxed transition-colors duration-300 hover:text-primary">
+                                  I enjoy working on front-end projects where I can build clean, responsive interfaces. I'm always learning ways to improve the user experience through design and structure.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Quality Assurance -->
+                  <div class="feature-item opacity-0 translate-y-5 transition-all duration-500 stagger-3 animate-in relative p-6 rounded-2xl border border-blue-100/50 bg-white/80 backdrop-blur-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-300/50">
+                      <div class="relative flex items-start gap-4">
+                          <div class="icon-ripple relative flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-green-100/50 to-green-200/50 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:from-green-200/70 hover:to-green-300/70">
+                              <i data-lucide="circle-check-big" class="w-6 h-6 text-green-600 relative z-10"></i>
+                          </div>
+                          <div class="flex-1">
+                              <h3 class="font-semibold text-primary text-lg mb-2">Quality Assurance</h3>
+                              <p class="text-primary leading-relaxed transition-colors duration-300 hover:text-primary">
+                                  In QA, I focus on writing automated and manual test scripts that help catch issues early. I've had the opportunity to use tools like Playwright and Testomat.io to help teams deliver more confidently.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Team Collaboration -->
+                  <div class="feature-item opacity-0 translate-y-5 transition-all duration-500 stagger-4 animate-in relative p-6 rounded-2xl border border-blue-100/50 bg-white/80 backdrop-blur-sm hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-300/50">
+                      <div class="relative flex items-start gap-4">
+                          <div class="icon-ripple relative flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-purple-100/50 to-purple-200/50 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:from-purple-200/70 hover:to-purple-300/70">
+                              <i data-lucide="handshake" class="w-6 h-6 text-purple-600 relative z-10"></i>
+                          </div>
+                          <div class="flex-1">
+                              <h3 class="font-semibold text-primary text-lg mb-2">Team Collaboration</h3>
+                              <p class="text-primary leading-relaxed transition-colors duration-300 hover:text-primary">
+                                  I value being part of cross-functional teams where I can support both development and testing efforts. I try to be dependable, detail-oriented, and mindful of how each task impacts the bigger picture.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
   </section>
 
-  <!-- projects -->
-  <section class="mx-auto mt-11 max-w-7xl px-4 sm:px-6 lg:px-8 bg-bg py-12">
-    <!-- Title & Subtitle -->
-    <div class="text-center mb-10">
-      <h1 class="text-primary text-3xl font-bold">Featured Works</h1>
-      <p class="text-subheadline text-text">A curated selection of projects that highlight my development and QA experience.</p>
-    </div>
+  <!-- Featured Works -->
+  <section id="works" class="mx-auto mt-11 max-w-7xl px-4 sm:px-6 lg:px-8 bg-bg py-12">
+      <!-- Title & Subtitle -->
+      <div class="text-center animate-slide-in-up mb-6">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-accent font-medium text-sm mb-4">
+              <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
+              Projects
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">
+              Featured 
+              <span class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                  Works
+              </span>
+          </h1>
+          <p class="text-lg text-primary max-w-2xl mx-auto leading-relaxed">
+             A curated selection of projects that highlight my development and QA experience.
+          </p>
+      </div>
 
-    <!-- Tabs -->
-    <div class="flex justify-center gap-4 mb-10">
-      <button class="tab-button active-tab text-primary bg-accent hover:bg-accent hover:text-surface rounded-xl p-2" data-tab="web">Website Projects</button>
-      <button class="tab-button text-primary hover:bg-accent rounded-xl p-2" data-tab="qa">QA Showcase</button>
-      <button class="tab-button text-primary hover:bg-accent rounded-xl p-2" data-tab="game">Game Development</button>
-    </div>
+      <!-- Tabs -->
+      <div class="flex justify-center gap-2 mb-6">
+          <button class="tab-button active-tab font-bold px-6 py-3 rounded-xl transition-all hover:bg-accent text-primary" data-tab="web">
+              Website Projects
+          </button>
+          <button class="tab-button font-bold px-6 py-3 rounded-xl transition-all hover:bg-accent text-primary" data-tab="qa">
+              QA Showcase
+          </button>
+          <button class="tab-button font-bold px-6 py-3 rounded-xl transition-all hover:bg-accent text-primary" data-tab="game">
+              Game Development
+          </button>
+      </div>
 
-    <!-- Grid Container -->
-    <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_1px_minmax(0,2fr)] gap-6">
       <!-- Project List-->
-      <div id="project-list" class="space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_1px_minmax(0,2fr)] gap-8">
+          <div id="project-list" class="space-y-4">
+              <!-- thatskycalendar -->
+              <div class="project-list-item project-card bg-surface p-6 rounded-2xl border border-gray-200 active" data-preview-id="project-1" data-category="web">
+                  <div class="flex gap-4 items-start">
+                      <div class="project-image rounded-xl overflow-hidden flex-shrink-0">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/Project%20Mockups/thatskyevent-mockup.png?updatedAt=1752382031237" alt="Project 1 ThatSkyCalendar" class="w-20 h-20 rounded-xl object-cover transition-transform duration-300" />
+                      </div>
+                      <div class="flex-1">
+                          <h3 class="font-bold text-primary text-lg mb-3">ThatSkyCalendar</h3>
+                          <div class="flex flex-wrap gap-2">
+                              <!-- HTML5 -->
+                              <div class="tech-badge relative group p-2 rounded-lg shadow-sm transition-all">
+                                  <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/html5.png?updatedAt=1751707824416" alt="HTML5" class="h-5 w-5 object-contain" />
+                                  <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-bg text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                                      HTML5
+                                  </div>
+                              </div>
+                              <!-- JavaScript -->
+                              <div class="tech-badge relative group p-2 rounded-lg shadow-sm transition-all">
+                                  <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/javascript.png?updatedAt=1751707823373" alt="JavaScript" class="h-5 w-5 object-contain" />
+                                  <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-bg text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                                      JavaScript
+                                  </div>
+                              </div>
+                              <!-- Tailwind CSS -->
+                              <div class="tech-badge relative group p-2 rounded-lg shadow-sm transition-all">
+                                  <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/tailwindcss.png?updatedAt=1751707823401" alt="Tailwind CSS" class="h-5 w-5 object-contain" />
+                                  <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-bg text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                                      Tailwind CSS
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
 
-        <!-- thatskycalendar -->
-        <div class="flex gap-4 cursor-pointer bg-surface p-4 rounded-xl hover:bg-accent project-card" data-preview-id="project-1" data-category="web">
-          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/sky%20cal.png?updatedAt=1739353477788" alt="Project 1 ThatSkyCalendar" class="w-16 h-16 rounded-lg" />
-          <div>
-            <h3 class="font-semibold text-primary font-bold">ThatSkyCalendar</h3>
-            <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
-                <!-- JavaScript -->
-                <div class="relative group p-2 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#E34F26]">
-                  <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/html5.png?updatedAt=1751707824416" alt="HTML5" class="h-4 w-4 object-contain" />
-                  <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-0 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-                  HTML5
+              <!-- Additional placeholder projects -->
+              <div class="project-list-item project-card bg-surface p-6 rounded-2xl border border-gray-200" data-preview-id="project-2" data-category="web">
+                  <div class="flex gap-4 items-start">
+                      <div class="project-image rounded-xl overflow-hidden flex-shrink-0">
+                          <div class="w-20 h-20 rounded-xl bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center">
+                              <span class="text-bg font-bold text-lg">P2</span>
+                          </div>
+                      </div>
+                      <div class="flex-1">
+                          <h3 class="font-bold text-primary text-lg mb-3">Portfolio Website</h3>
+                          <div class="flex flex-wrap gap-2">
+                              <div class="tech-badge relative group p-2 bg-blue-100 rounded-lg shadow-sm hover:bg-blue-500 transition-all">
+                                  <div class="h-5 w-5 bg-blue-600 rounded"></div>
+                                  <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-bg text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                                      React
+                                  </div>
+                              </div>
+                              <div class="tech-badge relative group p-2 bg-cyan-100 rounded-lg shadow-sm hover:bg-cyan-500 transition-all">
+                                  <div class="h-5 w-5 bg-cyan-600 rounded"></div>
+                                  <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-bg text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                                      Tailwind
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                <!-- JavaScript -->
-                <div class="relative group p-2 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#F7DF1E]">
-                  <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/javascript.png?updatedAt=1751707823373" alt="JavaScript" class="h-4 w-4 object-contain" />
-                  <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-                    JavaScript
+              </div>
+
+              <div class="project-list-item project-card bg-surface p-6 rounded-2xl border border-gray-200" data-preview-id="project-3" data-category="qa">
+                  <div class="flex gap-4 items-start">
+                      <div class="project-image rounded-xl overflow-hidden flex-shrink-0">
+                          <div class="w-20 h-20 rounded-xl bg-gradient-to-br from-green-400 to-blue-400 flex items-center justify-center">
+                              <span class="text-bg font-bold text-lg">QA</span>
+                          </div>
+                      </div>
+                      <div class="flex-1">
+                          <h3 class="font-bold text-primary text-lg mb-3">Test Automation Suite</h3>
+                          <div class="flex flex-wrap gap-2">
+                              <div class="tech-badge relative group p-2 bg-green-100 rounded-lg shadow-sm hover:bg-green-500 transition-all">
+                                  <div class="h-5 w-5 bg-green-600 rounded"></div>
+                                  <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-bg text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                                      Selenium
+                                  </div>
+                              </div>
+                              <div class="tech-badge relative group p-2 bg-blue-100 rounded-lg shadow-sm hover:bg-blue-500 transition-all">
+                                  <div class="h-5 w-5 bg-blue-600 rounded"></div>
+                                  <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-bg text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                                      Python
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                <!-- Tailwind CSS -->
-                <div class="relative group p-2 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#38BDF8]">
-                  <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/tailwindcss.png?updatedAt=1751707823401" alt="Tailwind CSS" class="h-4 w-4 object-contain" />
-                  <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-                    Tailwind CSS
-                  </div>
-                </div>
-            </div>
+              </div>
           </div>
-        </div>
 
-        <!-- budget buddy -->
-        <div class="flex gap-4 cursor-pointer bg-surface p-4 rounded-xl hover:bg-accent project-card" data-preview-id="project-2" data-category="web">
-          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/sky%20cal.png?updatedAt=1739353477788" alt="Project 2 Budget Buddy" class="w-16 h-16 rounded-lg" />
-          <div>
-            <h3 class="font-semibold text-primary font-bold">Budget Buddy</h3>
-            <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
-                <!-- JavaScript -->
-                <div class="relative group p-2 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#E34F26]">
-                  <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/html5.png?updatedAt=1751707824416" alt="HTML5" class="h-4 w-4 object-contain" />
-                  <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-0 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-                  HTML5
+          <!-- Divider -->
+          <div class="divider hidden lg:block h-full w-px mx-auto opacity-50"></div>
+
+          <!-- Project Preview (Right Column) -->
+          <div id="project-preview" class="flex flex-col items-center space-y-6">
+              <!-- thatskycalendar -->
+              <div id="project-1" class="preview-card active bg-white rounded-2xl p-6 border border-gray-200 shadow-lg">
+                  <div class="project-image rounded-xl overflow-hidden mb-6">
+                      <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/Project%20Mockups/thatskyevent%20-%20mockup%20landscape.png?updatedAt=1752382759160" alt="Project 1 Preview" class="w-full rounded-xl transition-transform duration-300" />
                   </div>
-                </div>
-                <!-- JavaScript -->
-                <div class="relative group p-2 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#F7DF1E]">
-                  <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/javascript.png?updatedAt=1751707823373" alt="JavaScript" class="h-4 w-4 object-contain" />
-                  <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-                    JavaScript
+                  
+                  <div class="flex flex-wrap gap-3 mb-6">
+                      <!-- HTML5 -->
+                      <div class="tech-badge relative group p-3 bg-orange-100 rounded-xl shadow-sm hover:bg-orange-500 transition-all">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/html5.png?updatedAt=1751707824416" alt="HTML5" class="h-6 w-6 object-contain" />
+                          <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-bg text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                              HTML5
+                          </div>
+                      </div>
+                      <!-- JavaScript -->
+                      <div class="tech-badge relative group p-3 bg-yellow-100 rounded-xl shadow-sm hover:bg-yellow-500 transition-all">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/javascript.png?updatedAt=1751707823373" alt="JavaScript" class="h-6 w-6 object-contain" />
+                          <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-bg text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                              JavaScript
+                          </div>
+                      </div>
+                      <!-- Tailwind CSS -->
+                      <div class="tech-badge relative group p-3 bg-cyan-100 rounded-xl shadow-sm hover:bg-cyan-500 transition-all">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/tailwindcss.png?updatedAt=1751707823401" alt="Tailwind CSS" class="h-6 w-6 object-contain" />
+                          <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-bg text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                              Tailwind CSS
+                          </div>
+                      </div>
                   </div>
-                </div>
-                <!-- Tailwind CSS -->
-                <div class="relative group p-2 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#38BDF8]">
-                  <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/tailwindcss.png?updatedAt=1751707823401" alt="Tailwind CSS" class="h-4 w-4 object-contain" />
-                  <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-                    Tailwind CSS
+
+                  <h3 class="text-2xl font-bold text-primary mb-4">That Sky Events</h3>
+                  <p class="text-base text-primary leading-relaxed mb-6">
+                      This project was developed to support the Sky: Children of the Light community by providing a reliable, easy-to-access event calendar. 
+                      It features a clean UI with a dynamic event card system and a calendar interface for quick navigation.
+                      <br><br>
+                      Built using HTML, CSS, and vanilla JavaScript, the site is hosted on Netlify and uses Firebase for storing dynamic content such as event data. ImageKit handles media delivery for optimal performance. 
+                      The design emphasizes clarity, responsiveness, and accessibility—especially for players using mobile devices.
+                  </p>
+                  
+                  <div class="flex gap-4">
+                      <a href="#" target="_blank" class="action-button bg-blue-600 text-bg px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all relative overflow-hidden">
+                          View Live Project
+                      </a>
+                      <button type="button" class="action-button bg-gray-600 text-bg px-6 py-3 rounded-xl font-semibold hover:bg-gray-700 transition-all relative overflow-hidden" onclick="openCaseStudy('sky-modal')">
+                          View Case Study
+                      </button>
                   </div>
-                </div>
-            </div>
-          </div>
-        </div>
+              </div>
 
-        <div class="flex gap-4 cursor-pointer bg-surface p-4 rounded-xl hover:bg-accent project-card" data-preview-id="project-3" data-category="game">
-          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/sky%20cal.png?updatedAt=1739353477788" alt="Project 2 Budget Buddy" class="w-16 h-16 rounded-lg" />
-          <div>
-            <h3 class="font-semibold text-primary font-bold">Cat Treasure Hunt</h3>
-            <div class="flex flex-wrap items-center justify-center gap-3 mt-4">
-              <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/html5.png?updatedAt=1751707824416" alt="HTML5" class="h-6 w-6" />
-              <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/tailwindcss.png?updatedAt=1751707823401" alt="Tailwind CSS" class="h-6 w-6" />
-              <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/javascript.png?updatedAt=1751707823373" alt="JavaScript" class="h-6 w-6" />
-            </div>
-          </div>
-        </div>
+              <!-- Placeholder for other projects -->
+              <div id="project-2" class="preview-card bg-white rounded-2xl p-6 border border-gray-200 shadow-lg">
+                  <div class="project-image rounded-xl overflow-hidden mb-6">
+                      <div class="w-full h-64 bg-gradient-to-br from-purple-400 to-pink-400 rounded-xl flex items-center justify-center">
+                          <span class="text-bg font-bold text-3xl">Portfolio Preview</span>
+                      </div>
+                  </div>
+                  
+                  <div class="flex flex-wrap gap-3 mb-6">
+                      <div class="tech-badge relative group p-3 bg-blue-100 rounded-xl shadow-sm hover:bg-blue-500 transition-all">
+                          <div class="h-6 w-6 bg-blue-600 rounded"></div>
+                      </div>
+                      <div class="tech-badge relative group p-3 bg-cyan-100 rounded-xl shadow-sm hover:bg-cyan-500 transition-all">
+                          <div class="h-6 w-6 bg-cyan-600 rounded"></div>
+                      </div>
+                  </div>
 
-        <div class="flex gap-4 cursor-pointer bg-surface p-4 rounded-xl hover:bg-accent project-card" data-preview-id="project-4" data-category="game">
-          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/sky%20cal.png?updatedAt=1739353477788" alt="Project 2 Budget Buddy" class="w-16 h-16 rounded-lg" />
-          <div>
-            <h3 class="font-semibold text-primary font-bold">Flip-a-doodle-doo</h3>
-            <div class="flex flex-wrap items-center justify-center gap-3 mt-4">
-              <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/html5.png?updatedAt=1751707824416" alt="HTML5" class="h-6 w-6" />
-              <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/tailwindcss.png?updatedAt=1751707823401" alt="Tailwind CSS" class="h-6 w-6" />
-              <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/javascript.png?updatedAt=1751707823373" alt="JavaScript" class="h-6 w-6" />
-            </div>
-          </div>
-        </div>
+                  <h3 class="text-2xl font-bold text-primary mb-4">Portfolio Website</h3>
+                  <p class="text-base text-primary leading-relaxed mb-6">
+                      A modern, responsive portfolio website showcasing my work and skills. Built with React and Tailwind CSS, featuring smooth animations and interactive elements.
+                  </p>
+                  
+                  <div class="flex gap-4">
+                      <a href="#" target="_blank" class="action-button bg-blue-600 text-bg px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all relative overflow-hidden">
+                          View Live Project
+                      </a>
+                      <button type="button" class="action-button bg-gray-600 text-bg px-6 py-3 rounded-xl font-semibold hover:bg-gray-700 transition-all relative overflow-hidden">
+                          View Case Study
+                      </button>
+                  </div>
+              </div>
 
-        <div class="flex gap-4 cursor-pointer bg-surface p-4 rounded-xl hover:bg-accent project-card" data-preview-id="project-5" data-category="qa">
-          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/sky%20cal.png?updatedAt=1739353477788" alt="Project 2 Budget Buddy" class="w-16 h-16 rounded-lg" />
-          <div>
-            <h3 class="font-semibold text-primary font-bold">QA Showcase</h3>
-            <div class="flex flex-wrap items-center justify-center gap-3 mt-4">
-              <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/html5.png?updatedAt=1751707824416" alt="HTML5" class="h-6 w-6" />
-              <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/tailwindcss.png?updatedAt=1751707823401" alt="Tailwind CSS" class="h-6 w-6" />
-              <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/javascript.png?updatedAt=1751707823373" alt="JavaScript" class="h-6 w-6" />
-            </div>
-          </div>
-        </div>
+              <div id="project-3" class="preview-card bg-white rounded-2xl p-6 border border-gray-200 shadow-lg">
+                  <div class="project-image rounded-xl overflow-hidden mb-6">
+                      <div class="w-full h-64 bg-gradient-to-br from-green-400 to-blue-400 rounded-xl flex items-center justify-center">
+                          <span class="text-bg font-bold text-3xl">QA Suite</span>
+                      </div>
+                  </div>
+                  
+                  <div class="flex flex-wrap gap-3 mb-6">
+                      <div class="tech-badge relative group p-3 bg-green-100 rounded-xl shadow-sm hover:bg-green-500 transition-all">
+                          <div class="h-6 w-6 bg-green-600 rounded"></div>
+                      </div>
+                      <div class="tech-badge relative group p-3 bg-blue-100 rounded-xl shadow-sm hover:bg-blue-500 transition-all">
+                          <div class="h-6 w-6 bg-blue-600 rounded"></div>
+                      </div>
+                  </div>
 
+                  <h3 class="text-2xl font-bold text-primary mb-4">Test Automation Suite</h3>
+                  <p class="text-base text-primary leading-relaxed mb-6">
+                      Comprehensive test automation framework built with Selenium and Python. Features cross-browser testing, detailed reporting, and CI/CD integration.
+                  </p>
+                  
+                  <div class="flex gap-4">
+                      <a href="#" target="_blank" class="action-button bg-blue-600 text-bg px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all relative overflow-hidden">
+                          View Repository
+                      </a>
+                      <button type="button" class="action-button bg-gray-600 text-bg px-6 py-3 rounded-xl font-semibold hover:bg-gray-700 transition-all relative overflow-hidden">
+                          View Documentation
+                      </button>
+                  </div>
+              </div>
+          </div>
       </div>
-
-      <!-- Divider -->
-      <div class="hidden lg:block h-full w-px bg-primary mx-auto"></div>
-
-      <!-- Project Preview (Right Column) -->
-    <div id="project-preview" class="flex flex-col items-center space-y-6">
-        <!-- Preview will be dynamically swapped -->
-        <div id="project-1" class="preview-card">
-          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/sky%20cal.png?updatedAt=1739353477788" alt="Project 1 Preview" class="rounded-xl object-cover justify-center" />
-          <div class="flex flex-wrap items-center justify-start gap-3 mt-4 mb-4">
-                <!-- JavaScript -->
-                <div class="relative group p-2 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#E34F26]">
-                  <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/html5.png?updatedAt=1751707824416" alt="HTML5" class="h-4 w-4 object-contain" />
-                  <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-0 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-                  HTML5
-                  </div>
-                </div>
-                <!-- JavaScript -->
-                <div class="relative group p-2 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#F7DF1E]">
-                  <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/javascript.png?updatedAt=1751707823373" alt="JavaScript" class="h-4 w-4 object-contain" />
-                  <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-                    JavaScript
-                  </div>
-                </div>
-                <!-- Tailwind CSS -->
-                <div class="relative group p-2 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#38BDF8]">
-                  <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/tailwindcss.png?updatedAt=1751707823401" alt="Tailwind CSS" class="h-4 w-4 object-contain" />
-                  <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-                    Tailwind CSS
-                  </div>
-                </div>
-          </div>
-          <h3 class="text-subheadline font-semibold text-primary ">Project Title 1</h3>
-          <p class="text-base text-text w-full">
-            This is a brief description of the project. It explains what the project is about and what technologies were used to build it.
-          </p>
-          <a href="#" target="_blank" class="inline-block mt-4 bg-accent text-white px-6 py-2 rounded-xl hover:bg-primary transition-all">
-            View Live Project
-          </a>
-        </div>
-
-        <div id="project-2" class="preview-card">
-          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/sky%20cal.png?updatedAt=1739353477788" alt="Project 1 Preview" class="rounded-xl object-cover justify-center" />
-          <div class="flex flex-wrap items-center justify-start gap-3 mt-4 mb-4">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/html5.png?updatedAt=1751707824416" alt="HTML5" class="h-6 w-6" />
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/tailwindcss.png?updatedAt=1751707823401" alt="Tailwind CSS" class="h-6 w-6" />
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/javascript.png?updatedAt=1751707823373" alt="JavaScript" class="h-6 w-6" />
-          </div>
-          <h3 class="text-subheadline font-semibold text-primary ">Project Title 2</h3>
-          <p class="text-base text-text w-full">
-            This is a brief description of the project. It explains what the project is about and what technologies were used to build it.
-          </p>
-          <a href="#" target="_blank" class="inline-block mt-4 bg-accent text-white px-6 py-2 rounded-xl hover:bg-primary transition-all">
-            View Live Project
-          </a>
-        </div>
-
-        <div id="project-3" class="preview-card">
-          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/sky%20cal.png?updatedAt=1739353477788" alt="Project 1 Preview" class="rounded-xl object-cover justify-center" />
-          <div class="flex flex-wrap items-center justify-start gap-3 mt-4 mb-4">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/html5.png?updatedAt=1751707824416" alt="HTML5" class="h-6 w-6" />
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/tailwindcss.png?updatedAt=1751707823401" alt="Tailwind CSS" class="h-6 w-6" />
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/javascript.png?updatedAt=1751707823373" alt="JavaScript" class="h-6 w-6" />
-          </div>
-          <h3 class="text-subheadline font-semibold text-primary ">Project Title 2</h3>
-          <p class="text-base text-text w-full">
-            This is a brief description of the project. It explains what the project is about and what technologies were used to build it.
-          </p>
-          <a href="#" target="_blank" class="inline-block mt-4 bg-accent text-white px-6 py-2 rounded-xl hover:bg-primary transition-all">
-            View Live Project
-          </a>
-        </div>
-
-        <div id="project-4" class="preview-card">
-          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/sky%20cal.png?updatedAt=1739353477788" alt="Project 1 Preview" class="rounded-xl object-cover justify-center" />
-          <div class="flex flex-wrap items-center justify-start gap-3 mt-4 mb-4">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/html5.png?updatedAt=1751707824416" alt="HTML5" class="h-6 w-6" />
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/tailwindcss.png?updatedAt=1751707823401" alt="Tailwind CSS" class="h-6 w-6" />
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/javascript.png?updatedAt=1751707823373" alt="JavaScript" class="h-6 w-6" />
-          </div>
-          <h3 class="text-subheadline font-semibold text-primary ">Project Title 2</h3>
-          <p class="text-base text-text w-full">
-            This is a brief description of the project. It explains what the project is about and what technologies were used to build it.
-          </p>
-          <a href="#" target="_blank" class="inline-block mt-4 bg-accent text-white px-6 py-2 rounded-xl hover:bg-primary transition-all">
-            View Live Project
-          </a>
-        </div>
-
-        <div id="project-5" class="preview-card">
-          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/sky%20cal.png?updatedAt=1739353477788" alt="Project 1 Preview" class="rounded-xl object-cover justify-center" />
-          <div class="flex flex-wrap items-center justify-start gap-3 mt-4 mb-4">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/html5.png?updatedAt=1751707824416" alt="HTML5" class="h-6 w-6" />
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/tailwindcss.png?updatedAt=1751707823401" alt="Tailwind CSS" class="h-6 w-6" />
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/javascript.png?updatedAt=1751707823373" alt="JavaScript" class="h-6 w-6" />
-          </div>
-          <h3 class="text-subheadline font-semibold text-primary ">Project Title 2</h3>
-          <p class="text-base text-text w-full">
-            This is a brief description of the project. It explains what the project is about and what technologies were used to build it.
-          </p>
-          <a href="#" target="_blank" class="inline-block mt-4 bg-accent text-white px-6 py-2 rounded-xl hover:bg-primary transition-all">
-            View Live Project
-          </a>
-        </div>
-
-      </div>
-    </div>
   </section>
 
   <!-- tech stacks -->
-  <section class="mx-auto mt-11 max-w-7xl px-4 sm:px-6 lg:px-8 bg-bg py-12">
-    <!-- Title & Subtitle -->
-    <div class="text-center mb-10">
-      <h2 class="text-accent font-bold mb-0 text-2xl">Skills</h2>
-      <h1 class="text-primary text-3xl font-bold">Technologies that I use</h1>
-      <p class="text-subheadline text-text">
-        A reliable set of technologies I use to build interfaces and validate functionality across platforms.
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-      <!-- Development Stack -->
-      <div class="space-y-4 bg-surface rounded-xl p-4">
-        <h3 class="text-xl font-semibold text-primary text-center font-bold">Development</h3>
-        <div class="flex flex-wrap justify-center gap-6 mx-8 mb-8">
-          <!-- HTML5 -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#E34F26]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/html5.png?updatedAt=1751707824416" alt="HTML5" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              HTML5
-            </div>
+  <section id="techs" class="mx-auto mt-4 max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+      <!-- Header -->
+      <div class="text-center mb-12 animate-slide-in-up">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-accent font-medium text-sm mb-4">
+              <i data-lucide="zap" class="w-4 h-4"></i>
+              Technical Expertise
           </div>
-
-          <!-- JavaScript -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#F7DF1E]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/javascript.png?updatedAt=1751707823373" alt="JavaScript" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              JavaScript
-            </div>
-          </div>
-
-          <!-- CSS3 -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#1572B6]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/css.png?updatedAt=1751707823354" alt="CSS" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              CSS
-            </div>
-          </div>
-
-          <!-- Tailwind CSS -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#38BDF8]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/tailwindcss.png?updatedAt=1751707823401" alt="Tailwind CSS" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              Tailwind CSS
-            </div>
-          </div>
-
-          <!-- PHP -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#777BB4]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/php.png?updatedAt=1751707823198" alt="PHP" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              PHP
-            </div>
-          </div>
-
-          <!-- React -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#61DAFB]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/react.png?updatedAt=1751707819232" alt="React" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              React
-            </div>
-          </div>
-
-          <!-- MySQL -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#4479A1]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/mysql.png?updatedAt=1751707823227" alt="MySQL" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              MySQL
-            </div>
-          </div>
-
-          <!-- Firebase -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#FFCA28]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/firebase.png?updatedAt=1751707819137" alt="Firebase" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              Firebase
-            </div>
-          </div>
-
-          <!-- Netlify -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#00C7B7]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/netlify.png?updatedAt=1751707819271" alt="Netlify" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              Netlify
-            </div>
-          </div>
-
-          <!-- Canva -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#00C4CC]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/canva.png?updatedAt=1751707821867" alt="Canva" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              Canva
-            </div>
-          </div>
-
-          <!-- Figma -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#F24E1E]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/figma.png?updatedAt=1751707820594" alt="Figma" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              Figma
-            </div>
-          </div>
-
-          <!-- Mystery tool (fallback color) -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-primary">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/image-removebg-preview%20(3).png?updatedAt=1751707817997" alt="Vs code" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              VS Code
-            </div>
-          </div>
-        </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">
+              Technologies & 
+              <span class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                  Skills
+              </span>
+          </h1>
+          <p class="text-lg text-primary max-w-2xl mx-auto leading-relaxed">
+              A comprehensive toolkit of modern technologies I leverage to create exceptional digital experiences and ensure robust quality assurance.
+          </p>
       </div>
 
-
-    <!-- 🧪 Quality Assurance Stack -->
-      <div class="space-y-4 bg-surface rounded-xl p-4">
-        <h3 class="text-xl font-semibold text-primary text-center font-bold">Quality Assurance</h3>
-        <div class="flex flex-wrap justify-center gap-6 mx-8">
+      <!-- Skills Overview Stats -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 animate-scale-in delay-100">
+              <div class="flex items-center justify-between mb-4">
+                  <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                      <i data-lucide="code" class="w-6 h-6 text-accent"></i>
+                  </div>
+                  <span class="text-2xl font-bold text-accent">12+</span>
+              </div>
+              <h3 class="font-semibold text-primary mb-2">Development Tools</h3>
+              <p class="text-sm text-primary">Frontend, backend, and design technologies</p>
+          </div>
           
-          <!-- Selenium -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#43B02A]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/selenium.png?updatedAt=1751707823378" alt="Selenium" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              Selenium
-            </div>
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 animate-scale-in delay-200">
+              <div class="flex items-center justify-between mb-4">
+                  <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+                      <i data-lucide="shield-check" class="w-6 h-6 text-green-600"></i>
+                  </div>
+                  <span class="text-2xl font-bold text-green-600">8+</span>
+              </div>
+              <h3 class="font-semibold text-primary mb-2">QA & Testing</h3>
+              <p class="text-sm text-primary">Automation and quality assurance tools</p>
           </div>
-
-          <!-- TypeScript -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#3178C6]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/typescript.png?updatedAt=1751707823176" alt="TypeScript" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              TypeScript
-            </div>
+          
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 animate-scale-in delay-300">
+              <div class="flex items-center justify-between mb-4">
+                  <div class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center">
+                      <i data-lucide="layers" class="w-6 h-6 text-cyan-600"></i>
+                  </div>
+                  <span class="text-2xl font-bold text-cyan-600">Full-Stack</span>
+              </div>
+              <h3 class="font-semibold text-primary mb-2">Expertise Level</h3>
+              <p class="text-sm text-primary">End-to-end development & testing</p>
           </div>
-
-          <!-- Cucumber -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#23D96C]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/cucumber.png?updatedAt=1751707822491" alt="Cucumber" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              Cucumber
-            </div>
-          </div>
-
-          <!-- Docker -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#2496ED]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/docker.png?updatedAt=1751707819242" alt="Docker" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              Docker
-            </div>
-          </div>
-
-          <!-- Jira -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#0052CC]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/jirasoftware.png?updatedAt=1751707819795" alt="Jira" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              Jira
-            </div>
-          </div>
-
-          <!-- Salesforce -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#00A1E0]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/salesforce.png?updatedAt=1751707819345" alt="Salesforce" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              Salesforce
-            </div>
-          </div>
-
-          <!-- Testomat.io -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#1F1F1F]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/testomatio_logo-removebg-preview.png?updatedAt=1751707819137" alt="Testomat.io" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              Testomat.io
-            </div>
-          </div>
-
-          <!-- Playwright -->
-          <div class="relative group p-3 bg-accent rounded-xl shadow-md transition-transform transform hover:scale-105 hover:bg-[#17A8F5]">
-            <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/image-removebg-preview%20(4).png?updatedAt=1751707818049" alt="Playwright" class="h-20 w-20 object-contain" />
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
-              Playwright
-            </div>
-          </div>
-
-        </div>
       </div>
 
-    </div>
+      <!-- Technology Stacks -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Development Stack -->
+          <div class="bg-white rounded-3xl p-8 shadow-xl border border-gray-200 animate-slide-in-up delay-100">
+              <div class="text-center mb-8">
+                  <div class="inline-flex items-center gap-3 px-6 py-3 text-accent rounded-2xl mb-4">
+                      <i data-lucide="laptop" class="w-6 h-6"></i>
+                      <h3 class="text-xl font-bold">Development</h3>
+                  </div>
+                  <p class="text-primary">Building modern web applications and user interfaces</p>
+              </div>
+
+              <div class="tech-grid grid grid-cols-4 gap-6">
+                  <!-- HTML5 -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-200">
+                      <div class="skill-level skill-expert"></div>
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/html5.png?updatedAt=1751707824416" 
+                                alt="HTML5" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">HTML5</h4>
+                              <p class="text-xs text-primary mt-1">Markup</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- CSS3 -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-300">
+                      <div class="skill-level skill-expert"></div>
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/css.png?updatedAt=1751707823354" 
+                                alt="CSS3" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">CSS3</h4>
+                              <p class="text-xs text-primary mt-1">Styling</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- JavaScript -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-400">
+                      <div class="skill-level skill-expert"></div>
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/javascript.png?updatedAt=1751707823373" 
+                                alt="JavaScript" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">JavaScript</h4>
+                              <p class="text-xs text-primary mt-1">Programming</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- React -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-500">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/react.png?updatedAt=1751707819232" 
+                                alt="React" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">React</h4>
+                              <p class="text-xs text-primary mt-1">Library</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- Tailwind CSS -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-600">
+                      <div class="skill-level skill-expert"></div>
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/tailwindcss.png?updatedAt=1751707823401" 
+                                alt="Tailwind CSS" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Tailwind</h4>
+                              <p class="text-xs text-primary mt-1">Framework</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- PHP -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-700">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/php.png?updatedAt=1751707823198" 
+                                alt="PHP" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">PHP</h4>
+                              <p class="text-xs text-primary mt-1">Backend</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- MySQL -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-blue-50 to-teal-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-800">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/mysql.png?updatedAt=1751707823227" 
+                                alt="MySQL" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">MySQL</h4>
+                              <p class="text-xs text-primary mt-1">Database</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-teal-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- Firebase -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-900">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/firebase.png?updatedAt=1751707819137" 
+                                alt="Firebase" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Firebase</h4>
+                              <p class="text-xs text-primary mt-1">Platform</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-teal-50 to-green-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-1000">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/netlify.png?updatedAt=1751707819271" 
+                                alt="Netlify" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Netlify</h4>
+                              <p class="text-xs text-primary mt-1">Hosting</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-teal-500 to-green-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-1100">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/canva.png?updatedAt=1751707821867" 
+                                alt="Canva" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Canva</h4>
+                              <p class="text-xs text-primary mt-1">Design</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-1200">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/figma.png?updatedAt=1751707820594" 
+                                alt="Figma" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Figma</h4>
+                              <p class="text-xs text-primary mt-1">Design</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-1300">
+                      <div class="skill-level skill-expert"></div>
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/image-removebg-preview%20(3).png?updatedAt=1751707817997" 
+                                alt="VS Code" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">VS Code</h4>
+                              <p class="text-xs text-primary mt-1">Editor</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Quality Assurance Stack -->
+          <div class="bg-white rounded-3xl p-8 shadow-xl border border-gray-200 animate-slide-in-up delay-200">
+              <div class="text-center mb-8">
+                  <div class="inline-flex items-center gap-3 px-6 py-3 text-accent rounded-2xl mb-4">
+                      <i data-lucide="shield-check" class="w-6 h-6"></i>
+                      <h3 class="text-xl font-bold">Quality Assurance</h3>
+                  </div>
+                  <p class="text-primary">Ensuring robust testing and quality validation</p>
+              </div>
+
+              <div class="tech-grid grid grid-cols-4 gap-6">
+                  <!-- Selenium -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-400">
+                      <div class="skill-level skill-expert"></div>
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/selenium.png?updatedAt=1751707823378" 
+                                alt="Selenium" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Selenium</h4>
+                              <p class="text-xs text-primary mt-1">Automation</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- Playwright -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-500">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/image-removebg-preview%20(4).png?updatedAt=1751707818049" 
+                                alt="Playwright" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Playwright</h4>
+                              <p class="text-xs text-primary mt-1">Testing</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- TypeScript -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-600">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/typescript.png?updatedAt=1751707823176" 
+                                alt="TypeScript" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">TypeScript</h4>
+                              <p class="text-xs text-primary mt-1">Language</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- Cucumber -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-400">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/cucumber.png?updatedAt=1751707822491" 
+                                alt="Cucumber" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Cucumber</h4>
+                              <p class="text-xs text-primary mt-1">Testing</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+                
+                  <!-- Docker -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-700">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/docker.png?updatedAt=1751707819242" 
+                                alt="Docker" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Docker</h4>
+                              <p class="text-xs text-primary mt-1">Containerization</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- Jira -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-600">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/jirasoftware.png?updatedAt=1751707819795" 
+                                alt="Jira" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Jira</h4>
+                              <p class="text-xs text-primary mt-1">Management</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+          
+                  <!-- Salesforce -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-400">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/salesforce.png?updatedAt=1751707819345" 
+                                alt="Salesforce" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Salesforce</h4>
+                              <p class="text-xs text-primary mt-1">CRM</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- Testomat -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-600">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/testomatio_logo-removebg-preview.png?updatedAt=1751707819137" 
+                                alt="Testomat" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Testomat</h4>
+                              <p class="text-xs text-primary mt-1">Management</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+                </div>
+          </div>
+      </div>
   </section>
 
+  <!-- services -->
+  <section id="services" class="relative mx-auto mt-4 px-4 sm:px-6 lg:px-8 py-16 contact-card overflow-hidden">      
+      <div class="relative z-10 max-w-7xl mx-auto">
+          <!-- Header -->
+          <div class="text-center animate-slide-in-up mb-6">
+              <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-accent font-medium text-sm mb-4">
+                  <i data-lucide="briefcase" class="w-4 h-4"></i>
+                  Services
+              </div>
+              <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">
+                  Value 
+                  <span class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                      I Bring
+                  </span>
+              </h1>
+              <p class="text-lg text-primary max-w-2xl mx-auto leading-relaxed">
+                  From user experience to test coverage. Bridging development and quality for seamless delivery.
+              </p>
+          </div>
 
+          <!-- Cards Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <!-- Card 1: Front-End Development -->
+              <div class=" translate-y-6 transition-all duration-700 stagger-2 animate-in">
+                  <div class="card-glow hover-lift relative service-card p-8 pt-16 rounded-2xl text-center shadow-lg h-full group">
+                      <div class="floating-icon absolute -top-6 left-1/2 -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg icon-pulse">
+                          <i data-lucide="monitor" class="w-8 h-8 text-bg"></i>
+                      </div>
+                      <h4 class="text-primary font-bold text-xl mb-4 group-hover:text-accent transition-colors duration-300">
+                          Thoughtful Front-End Development
+                      </h4>
+                      <p class="text-primary text-base leading-relaxed group-hover:text-primary transition-colors duration-300">
+                          I create responsive, user-first interfaces using accessibility-first principles. My work balances modern design with real-world usability.
+                      </p>
+                      <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                  </div>
+              </div>
 
-  <!-- about -->
-  <div class="mx-auto mt-11 max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div
-      class="flex flex-col rounded-lg bg-dark-pink text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-full md:flex-row">
-      <img
-        class="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:!rounded-none md:!rounded-s-lg"
-        src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/kathy.png?updatedAt=1739766595559"
-        alt="" />
-      <div class="flex flex-col justify-start p-6">
-        <h5 class="mb-2 text-xl font-medium">Get to know Kathleen!</h5>
-        <p class="mb-4 text-lg">
-          I'm a programmer who enjoys using technology to build high-quality user experiences. I'm particularly adept at quality assurance testing and front-end development.
-        </p>
-        <p class="mb-4 text-lg">See examples of my work and services <a href="" class="text-pink font-bold">here</a>. My resume, highlighting my skills and experience, is available <a href="" class="text-pink font-bold">here</a>. Let's connect and discuss how I can help you.</p>
-        <div class="w-full h-auto py-8 flex items-center justify-start gap-4 flex-wrap">
+              <!-- Card 2: QA Strategy -->
+              <div class=" translate-y-6 transition-all duration-700 stagger-3 animate-in">
+                  <div class="card-glow hover-lift relative service-card p-8 pt-16 rounded-2xl text-center shadow-lg h-full group mt-8 lg:mt-0">
+                      <div class="floating-icon absolute -top-6 left-1/2 -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg icon-pulse">
+                          <i data-lucide="bug" class="w-8 h-8 text-bg"></i>
+                      </div>
+                      <h4 class="text-primary font-bold text-xl mb-4 group-hover:text-green-600 transition-colors duration-300">
+                          Robust QA Strategy & Test Automation
+                      </h4>
+                      <p class="text-primary text-base leading-relaxed group-hover:text-primary transition-colors duration-300">
+                          I write and maintain automated test suites and also conduct manual testing to catch edge cases early, ensuring solid product releases.
+                      </p>
+                      <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-green-600 rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                  </div>
+              </div>
 
-          <button class="group transition-all duration-500 hover:-translate-y-2">
-          <a href="https://www.facebook.com/kx.linaa" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 93 92" fill="none">
-              <rect x="1.13867" width="91.5618" height="91.5618" rx="15" fill="#337FFF"/>
-              <path d="M57.4233 48.6403L58.7279 40.3588H50.6917V34.9759C50.6917 32.7114 51.8137 30.4987 55.4013 30.4987H59.1063V23.4465C56.9486 23.1028 54.7685 22.9168 52.5834 22.8901C45.9692 22.8901 41.651 26.8626 41.651 34.0442V40.3588H34.3193V48.6403H41.651V68.671H50.6917V48.6403H57.4233Z" fill="white"/>
-              </svg>
-          </a>
+              <!-- Card 3: Detail-Oriented -->
+              <div class=" translate-y-6 transition-all duration-700 stagger-4 animate-in">
+                  <div class="card-glow hover-lift relative service-card p-8 pt-16 rounded-2xl text-center shadow-lg h-full group">
+                      <div class="floating-icon absolute -top-6 left-1/2 -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg icon-pulse">
+                          <i data-lucide="shield-check" class="w-8 h-8 text-bg"></i>
+                      </div>
+                      <h4 class="text-primary font-bold text-xl mb-4 group-hover:text-cyan-600 transition-colors duration-300">
+                          Detail-Oriented & NDA-Compliant
+                      </h4>
+                      <p class="text-primary text-base leading-relaxed group-hover:text-primary transition-colors duration-300">
+                          I handle sensitive, NDA-protected workflows with precision across documentation, test execution, and delivery.
+                      </p>
+                      <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-purple-600 rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                  </div>
+              </div>
+
+              <!-- Card 4: Collaborative -->
+              <div class=" translate-y-6 transition-all duration-700 stagger-5 animate-in">
+                  <div class="card-glow hover-lift relative service-card p-8 pt-16 rounded-2xl text-center shadow-lg h-full group mt-8 lg:mt-0">
+                      <div class="floating-icon absolute -top-6 left-1/2 -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg icon-pulse">
+                          <i data-lucide="handshake" class="w-8 h-8 text-bg"></i>
+                      </div>
+                      <h4 class="text-primary font-bold text-xl mb-4 group-hover:text-pink-600 transition-colors duration-300">
+                          Collaborative, Cross-Functional Workstyle
+                      </h4>
+                      <p class="text-primary text-base leading-relaxed group-hover:text-primary transition-colors duration-300">
+                          I'm dependable, curious, and communicate clearly with devs, PMs, and designers to deliver solutions, never just problems.
+                      </p>
+                      <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 to-pink-600 rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Bottom CTA -->
+          <div class=" translate-y-6 transition-all duration-700 stagger-6 animate-in text-center mt-16">
+              <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-bg rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer">
+                  <span>Let's work together</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+          </div>
+      </div>
+  </section>
+
+  <!-- background & contact -->
+  <section id="contact" class="relative mx-auto mt-11 max-w-7xl px-4 sm:px-6 lg:px-8 py-16 overflow-hidden">
+      <div class="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div class="lg:col-span-2 space-y-8">
+              <!-- Section Title -->
+              <div class="translate-y-6 transition-all duration-700 stagger-1 animate-in">
+                          <!-- Header -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-accent font-medium text-sm mb-4">
+                        <i data-lucide="briefcase" class="w-4 h-4"></i>
+                        Contact
+                    </div>
+                  <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">Background</h1>
+                  <p class="text-lg text-primary max-w-2xl leading-relaxed">
+                      Here's a quick overview of my background and expertise. For a full resume, click below to view.
+                  </p>
+              </div>
+
+              <!-- QA Experience Card -->
+              <div class="translate-y-6 transition-all duration-700 stagger-2 animate-in">
+                  <div class="experience-card rounded-2xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group">
+                      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-2">
+                          <h3 class="text-xl font-bold text-accent group-hover:text-blue-700 transition-colors duration-300">Quality Assurance Engineer</h3>
+                          <span class="text-sm text-gray-500 bg-blue-50 px-3 py-1 rounded-full font-medium">December 2021 – Present</span>
+                      </div>
+                      <div class="flex items-center gap-2 mb-4">
+                          <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                          <p class="text-base font-semibold text-primary">ICT Remote Consultancy</p>
+                      </div>
+                      <p class="text-primary leading-relaxed group-hover:text-primary transition-colors duration-300">
+                          I've been fortunate to support testing efforts across multiple eCommerce websites. I've worked with tools like Playwright, TypeScript, and Testomat.io to help improve testing workflows and identify issues early. My tasks often involved writing and running automation scripts, documenting results, and helping ensure product quality by contributing to user scenarios and bug tracking. It's been a collaborative and rewarding experience that's helped me grow both technically and professionally.
+                      </p>
+                      <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                  </div>
+              </div>
+
+              <!-- Internship Card -->
+              <div class="translate-y-6 transition-all duration-700 stagger-3 animate-in">
+                  <div class="experience-card rounded-2xl p-8 shadow-lg hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 group">
+                      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-2">
+                          <h3 class="text-xl font-bold text-purple-600 group-hover:text-purple-700 transition-colors duration-300">Intern</h3>
+                          <span class="text-sm text-gray-500 bg-purple-50 px-3 py-1 rounded-full font-medium">November 2018 – December 2018</span>
+                      </div>
+                      <div class="flex items-center gap-2 mb-4">
+                          <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                          <p class="text-base font-semibold text-primary">MaxSavers</p>
+                      </div>
+                      <p class="text-primary leading-relaxed group-hover:text-primary transition-colors duration-300">
+                          As an intern at MaxSaver, I had the opportunity to assist with technical support tasks and daily operations. I contributed where I could by helping diagnose customer issues and observing how the team handled real-world tech challenges. This early experience taught me the importance of patience, communication, and being dependable in a team environment.
+                      </p>
+                      <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-purple-600 rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                  </div>
+              </div>
+
+              <!-- Resume Button -->
+              <div class="translate-y-6 transition-all duration-700 stagger-4 animate-in">
+                  <a rel="noopener" target="_blank" href="/resume.pdf" class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-bg rounded-2xl font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 group">
+                      <i data-lucide="file-text" class="w-5 h-5 group-hover:scale-110 transition-transform duration-300"></i>
+                      <span>View Full Resume</span>
+                      <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"></i>
+                  </a>
+              </div>
+          </div>
+
+          <!-- Right: Contact Card -->
+          <div class="translate-y-6 transition-all duration-700 stagger-5 animate-in">
+              <div class="contact-card p-8 rounded-2xl shadow-lg h-fit hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group">
+                  <div class="flex items-center gap-3 mb-4">
+                      <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                          <i data-lucide="user-check" class="w-6 h-6 text-bg"></i>
+                      </div>
+                      <h3 class="text-xl font-bold text-primary group-hover:text-accent transition-colors duration-300">Let's Connect</h3>
+                  </div>
+                  
+                  <p class="text-primary mb-6 leading-relaxed group-hover:text-primary transition-colors duration-300">
+                      Open to opportunities and collaborations!
+                  </p>
+                  
+                  <!-- Email -->
+                  <a class="flex items-center gap-3 p-4 bg-white/50 rounded-xl hover:bg-white/80 transition-all duration-300 mb-6 group/email" href="mailto:kathleenpacinojavier@gmail.com">
+                      <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                          <i data-lucide="mail" class="w-5 h-5 text-bg"></i>
+                      </div>
+                      <div class="flex-1">
+                          <p class="text-sm font-medium text-primary group-hover/email:text-accent transition-colors duration-300">Email</p>
+                          <p class="text-sm text-primary group-hover/email:text-primary transition-colors duration-300">kathleenpacinojavier@gmail.com</p>
+                      </div>
+                      <i data-lucide="external-link" class="w-4 h-4 text-gray-400 group-hover/email:text-blue-500 transition-colors duration-300"></i>
+                  </a>
+                  
+                  <!-- Social Links -->
+                  <div class="space-y-3">
+                      <p class="text-sm font-medium text-primary mb-3">Follow me on</p>
+                      <div class="grid grid-cols-2 gap-3">
+                          <a rel="noopener" href="https://www.linkedin.com/in/kathleenjavier" target="_blank" class="social-icon flex items-center gap-3 p-3 bg-white/50 rounded-xl hover:bg-white/80 transition-all duration-300 group/social">
+                              <div class="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
+                                  <i data-lucide="linkedin" class="w-4 h-4 text-bg"></i>
+                              </div>
+                              <span class="text-sm font-medium text-primary group-hover/social:text-accent transition-colors duration-300">LinkedIn</span>
+                          </a>
+                          
+                          <a rel="noopener" href="https://github.com/kthjvr" target="_blank" class="social-icon flex items-center gap-3 p-3 bg-white/50 rounded-xl hover:bg-white/80 transition-all duration-300 group/social">
+                              <div class="w-8 h-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg flex items-center justify-center">
+                                  <i data-lucide="github" class="w-4 h-4 text-bg"></i>
+                              </div>
+                              <span class="text-sm font-medium text-primary group-hover/social:text-primary transition-colors duration-300">GitHub</span>
+                          </a>
+                          
+                          <a rel="noopener" href="https://www.facebook.com/kx.linaa" target="_blank" class="social-icon flex items-center gap-3 p-3 bg-white/50 rounded-xl hover:bg-white/80 transition-all duration-300 group/social">
+                              <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                                  <i data-lucide="facebook" class="w-4 h-4 text-bg"></i>
+                              </div>
+                              <span class="text-sm font-medium text-primary group-hover/social:text-accent transition-colors duration-300">Facebook</span>
+                          </a>
+                          
+                          <a rel="noopener" href="https://www.instagram.com/kx.linaa/" target="_blank" class="social-icon flex items-center gap-3 p-3 bg-white/50 rounded-xl hover:bg-white/80 transition-all duration-300 group/social">
+                              <div class="w-8 h-8 bg-gradient-to-br from-pink-500 to-pink-600 rounded-lg flex items-center justify-center">
+                                  <i data-lucide="instagram" class="w-4 h-4 text-bg"></i>
+                              </div>
+                              <span class="text-sm font-medium text-primary group-hover/social:text-pink-600 transition-colors duration-300">Instagram</span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="gradient-bg text-bg py-16 mt-12 relative">        
+    <div class="container mx-auto px-6 relative z-10">
+      <!-- Main footer content -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <!-- Brand section -->
+          <div class="fade-in text-center md:text-left">
+              <h3 class="logo-text text-2xl font-bold mb-4">Kathleen Javier</h3>
+              <p class="text-gray-300 mb-6 leading-relaxed">
+                  Crafting digital experiences with passion and precision. 
+                  Transforming ideas into beautiful, functional solutions.
+              </p>
+              <div class="flex justify-center md:justify-start space-x-4 text-accent">
+                  <a title="github-link" href="https://github.com/kthjvr" class="social-icon w-10 h-10 rounded-full bg-bg bg-opacity-10 flex items-center justify-center hover:bg-opacity-20">
+                      <i data-lucide="github" class="w-5 h-5"></i>
+                  </a>
+                  <a title="linkedin-link" href="https://www.linkedin.com/in/kathleenjavier" class="social-icon w-10 h-10 rounded-full bg-bg bg-opacity-10 flex items-center justify-center hover:bg-opacity-20">
+                      <i data-lucide="linkedin" class="w-5 h-5"></i>
+                  </a>
+                  <a title="instagram-link" href="https://www.instagram.com/kx.linaa/" class="social-icon w-10 h-10 rounded-full bg-bg bg-opacity-10 flex items-center justify-center hover:bg-opacity-20">
+                      <i data-lucide="instagram" class="w-5 h-5"></i>
+                  </a>
+                  <a title="email-link" href="mailto:kathleenpacinojavier@gmail.com" class="social-icon w-10 h-10 rounded-full bg-bg bg-opacity-10 flex items-center justify-center hover:bg-opacity-20">
+                      <i data-lucide="mail" class="w-5 h-5"></i>
+                  </a>
+              </div>
+          </div>
+          
+          <!-- Quick links -->
+          <div class="fade-in-delay-1 text-center md:text-left">
+              <h4 class="text-lg font-semibold mb-4 text-blue-300">Quick Links</h4>
+              <ul class="space-y-2">
+                  <li><a href="#about" class="footer-link text-gray-300 hover:text-bg">About</a></li>
+                  <li><a href="#works" class="footer-link text-gray-300 hover:text-bg">Projects</a></li>
+                  <li><a href="#services" class="footer-link text-gray-300 hover:text-bg">Services</a></li>
+                  <li><a href="#contact" class="footer-link text-gray-300 hover:text-bg">Contact</a></li>
+                  <!-- <li><a href="#blog" class="footer-link text-gray-300 hover:text-bg">Blog</a></li> -->
+              </ul>
+          </div>
+          
+          <!-- Tech stack -->
+          <div class="fade-in-delay-2 text-center md:text-left">
+              <h4 class="text-lg font-semibold mb-4 text-purple-300">Built With</h4>
+              <div class="flex flex-wrap justify-center md:justify-start gap-2">
+                  <span class="tech-badge px-3 py-1 rounded-full text-xs font-medium">React</span>
+                  <span class="tech-badge px-3 py-1 rounded-full text-xs font-medium">Tailwind</span>
+                  <span class="tech-badge px-3 py-1 rounded-full text-xs font-medium">JavaScript</span>
+                  <span class="tech-badge px-3 py-1 rounded-full text-xs font-medium">CSS3</span>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Divider -->
+      <div class="divider h-px w-full mb-8"></div>
+      
+      <!-- Bottom section -->
+      <div class="fade-in-delay-3 flex flex-col md:flex-row justify-between items-center">
+          <div class="text-center md:text-left mb-4 md:mb-0">
+              <p class="text-sm text-gray-300 tracking-wide">
+                  © <span id="year"></span> Kathleen Javier. All Rights Reserved.
+              </p>
+              <p class="text-xs text-gray-400 mt-1">
+                  Designed & developed with <span class="text-red-400">♥</span> by Kathy.
+              </p>
+          </div>
+          
+          <!-- Back to top button -->
+          <button title="scroll-top" type="button" onclick="scrollToTop()" class="scroll-top w-12 h-12 rounded-full flex items-center justify-center group">
+              <i data-lucide="arrow-up" class="w-5 h-5 group-hover:transform group-hover:-translate-y-1 transition-transform"></i>
           </button>
-
-          <button class="group transition-all duration-500 hover:-translate-y-2">
-          <a href="https://www.instagram.com/kx.linaa/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 93 92" fill="none">
-            <rect x="1.13867" width="91.5618" height="91.5618" rx="15" fill="url(#paint0_linear_7092_54439)"/>
-            <path d="M38.3762 45.7808C38.3762 41.1786 42.1083 37.4468 46.7132 37.4468C51.3182 37.4468 55.0522 41.1786 55.0522 45.7808C55.0522 50.383 51.3182 54.1148 46.7132 54.1148C42.1083 54.1148 38.3762 50.383 38.3762 45.7808ZM33.8683 45.7808C33.8683 52.8708 39.619 58.618 46.7132 58.618C53.8075 58.618 59.5581 52.8708 59.5581 45.7808C59.5581 38.6908 53.8075 32.9436 46.7132 32.9436C39.619 32.9436 33.8683 38.6908 33.8683 45.7808ZM57.0648 32.4346C57.0646 33.0279 57.2404 33.608 57.5701 34.1015C57.8997 34.595 58.3684 34.9797 58.9168 35.2069C59.4652 35.4342 60.0688 35.4939 60.6511 35.3784C61.2334 35.2628 61.7684 34.9773 62.1884 34.5579C62.6084 34.1385 62.8945 33.6041 63.0105 33.0222C63.1266 32.4403 63.0674 31.8371 62.8404 31.2888C62.6134 30.7406 62.2289 30.2719 61.7354 29.942C61.2418 29.6122 60.6615 29.436 60.0679 29.4358H60.0667C59.2708 29.4361 58.5077 29.7522 57.9449 30.3144C57.3821 30.8767 57.0655 31.6392 57.0648 32.4346ZM36.6072 66.1302C34.1683 66.0192 32.8427 65.6132 31.9618 65.2702C30.7939 64.8158 29.9606 64.2746 29.0845 63.4002C28.2083 62.5258 27.666 61.6938 27.2133 60.5266C26.8699 59.6466 26.4637 58.3214 26.3528 55.884C26.2316 53.2488 26.2073 52.4572 26.2073 45.781C26.2073 39.1048 26.2336 38.3154 26.3528 35.678C26.4639 33.2406 26.8731 31.918 27.2133 31.0354C27.668 29.8682 28.2095 29.0354 29.0845 28.1598C29.9594 27.2842 30.7919 26.7422 31.9618 26.2898C32.8423 25.9466 34.1683 25.5406 36.6072 25.4298C39.244 25.3086 40.036 25.2844 46.7132 25.2844C53.3904 25.2844 54.1833 25.3106 56.8223 25.4298C59.2612 25.5408 60.5846 25.9498 61.4677 26.2898C62.6356 26.7422 63.4689 27.2854 64.345 28.1598C65.2211 29.0342 65.7615 29.8682 66.2161 31.0354C66.5595 31.9154 66.9658 33.2406 67.0767 35.678C67.1979 38.3154 67.2221 39.1048 67.2221 45.781C67.2221 52.4572 67.1979 53.2466 67.0767 55.884C66.9656 58.3214 66.5573 59.6462 66.2161 60.5266C65.7615 61.6938 65.2199 62.5266 64.345 63.4002C63.4701 64.2738 62.6356 64.8158 61.4677 65.2702C60.5872 65.6134 59.2612 66.0194 56.8223 66.1302C54.1855 66.2514 53.3934 66.2756 46.7132 66.2756C40.033 66.2756 39.2432 66.2514 36.6072 66.1302ZM36.4001 20.9322C33.7371 21.0534 31.9174 21.4754 30.3282 22.0934C28.6824 22.7316 27.2892 23.5878 25.897 24.977C24.5047 26.3662 23.6502 27.7608 23.0116 29.4056C22.3933 30.9948 21.971 32.8124 21.8497 35.4738C21.7265 38.1394 21.6982 38.9916 21.6982 45.7808C21.6982 52.57 21.7265 53.4222 21.8497 56.0878C21.971 58.7494 22.3933 60.5668 23.0116 62.156C23.6502 63.7998 24.5049 65.196 25.897 66.5846C27.289 67.9732 28.6824 68.8282 30.3282 69.4682C31.9204 70.0862 33.7371 70.5082 36.4001 70.6294C39.0687 70.7506 39.92 70.7808 46.7132 70.7808C53.5065 70.7808 54.3592 70.7526 57.0264 70.6294C59.6896 70.5082 61.5081 70.0862 63.0983 69.4682C64.7431 68.8282 66.1373 67.9738 67.5295 66.5846C68.9218 65.1954 69.7745 63.7998 70.4149 62.156C71.0332 60.5668 71.4575 58.7492 71.5768 56.0878C71.698 53.4202 71.7262 52.57 71.7262 45.7808C71.7262 38.9916 71.698 38.1394 71.5768 35.4738C71.4555 32.8122 71.0332 30.9938 70.4149 29.4056C69.7745 27.7618 68.9196 26.3684 67.5295 24.977C66.1395 23.5856 64.7431 22.7316 63.1003 22.0934C61.5081 21.4754 59.6894 21.0514 57.0284 20.9322C54.3612 20.811 53.5085 20.7808 46.7152 20.7808C39.922 20.7808 39.0687 20.809 36.4001 20.9322Z" fill="white"/>
-            <defs>
-              <linearGradient id="paint0_linear_7092_54439" x1="90.9407" y1="91.5618" x2="-0.621143" y2="-2.46459e-06" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#FBE18A"/>
-                <stop offset="0.21" stop-color="#FCBB45"/>
-                <stop offset="0.38" stop-color="#F75274"/>
-                <stop offset="0.52" stop-color="#D53692"/>
-                <stop offset="0.74" stop-color="#8F39CE"/>
-                <stop offset="1" stop-color="#5B4FE9"/>
-              </linearGradient>
-            </defs>
-            </svg>
-          </a>
-          </button>
-
-          <button class="group transition-all duration-500 hover:-translate-y-2">
-            <a href="https://wa.me/+639164386015" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 93 92" fill="none">
-              <rect x="1.13867" width="91.5618" height="91.5618" rx="15" fill="#00D95F"/>
-              <path d="M23.5068 66.8405L26.7915 54.6381C24.1425 49.8847 23.3009 44.3378 24.4211 39.0154C25.5413 33.693 28.5482 28.952 32.89 25.6624C37.2319 22.3729 42.6173 20.7554 48.0583 21.1068C53.4992 21.4582 58.6306 23.755 62.5108 27.5756C66.3911 31.3962 68.7599 36.4844 69.1826 41.9065C69.6053 47.3286 68.0535 52.7208 64.812 57.0938C61.5705 61.4668 56.8568 64.5271 51.5357 65.7133C46.2146 66.8994 40.6432 66.1318 35.8438 63.5513L23.5068 66.8405ZM36.4386 58.985L37.2016 59.4365C40.6779 61.4918 44.7382 62.3423 48.7498 61.8555C52.7613 61.3687 56.4987 59.5719 59.3796 56.7452C62.2605 53.9185 64.123 50.2206 64.6769 46.2279C65.2308 42.2351 64.445 38.1717 62.4419 34.6709C60.4388 31.1701 57.331 28.4285 53.6027 26.8734C49.8745 25.3184 45.7352 25.0372 41.8299 26.0736C37.9247 27.11 34.4729 29.4059 32.0124 32.6035C29.5519 35.801 28.2209 39.7206 28.2269 43.7514C28.2237 47.0937 29.1503 50.3712 30.9038 53.2192L31.3823 54.0061L29.546 60.8167L36.4386 58.985Z" fill="white"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M54.9566 46.8847C54.5093 46.5249 53.9856 46.2716 53.4254 46.1442C52.8651 46.0168 52.2831 46.0186 51.7236 46.1495C50.8831 46.4977 50.3399 47.8134 49.7968 48.4713C49.6823 48.629 49.514 48.7396 49.3235 48.7823C49.133 48.8251 48.9335 48.797 48.7623 48.7034C45.6849 47.5012 43.1055 45.2965 41.4429 42.4475C41.3011 42.2697 41.2339 42.044 41.2557 41.8178C41.2774 41.5916 41.3862 41.3827 41.5593 41.235C42.165 40.6368 42.6098 39.8959 42.8524 39.0809C42.9063 38.1818 42.6998 37.2863 42.2576 36.5011C41.9157 35.4002 41.265 34.42 40.3825 33.6762C39.9273 33.472 39.4225 33.4036 38.9292 33.4791C38.4359 33.5546 37.975 33.7709 37.6021 34.1019C36.9548 34.6589 36.4411 35.3537 36.0987 36.135C35.7562 36.9163 35.5939 37.7643 35.6236 38.6165C35.6256 39.0951 35.6864 39.5716 35.8046 40.0354C36.1049 41.1497 36.5667 42.2144 37.1754 43.1956C37.6145 43.9473 38.0937 44.6749 38.6108 45.3755C40.2914 47.6767 42.4038 49.6305 44.831 51.1284C46.049 51.8897 47.3507 52.5086 48.7105 52.973C50.1231 53.6117 51.6827 53.8568 53.2237 53.6824C54.1018 53.5499 54.9337 53.2041 55.6462 52.6755C56.3588 52.1469 56.9302 51.4518 57.3102 50.6512C57.5334 50.1675 57.6012 49.6269 57.5042 49.1033C57.2714 48.0327 55.836 47.4007 54.9566 46.8847Z" fill="white"/>
-              </svg>
-            </a>
-          </button>
-
-          <button class="group transition-all duration-500 hover:-translate-y-2">
-            <a href="www.linkedin.com/in/kathleenjavier" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 93 93" fill="none">
-              <rect x="1.13867" y="1" width="91.5618" height="91.5618" rx="15" fill="#006699"/>
-              <path d="M37.1339 63.4304V40.9068H29.6473V63.4304H37.1346H37.1339ZM33.3922 37.8321C36.0023 37.8321 37.6273 36.1025 37.6273 33.9411C37.5785 31.7304 36.0023 30.0491 33.4418 30.0491C30.8795 30.0491 29.2061 31.7304 29.2061 33.9409C29.2061 36.1023 30.8305 37.8319 33.3431 37.8319H33.3916L33.3922 37.8321ZM41.2777 63.4304H48.7637V50.8535C48.7637 50.1813 48.8125 49.5072 49.0103 49.0271C49.5513 47.6815 50.7831 46.2887 52.8517 46.2887C55.5599 46.2887 56.644 48.354 56.644 51.3822V63.4304H64.1297V50.516C64.1297 43.598 60.4369 40.3787 55.5115 40.3787C51.4733 40.3787 49.6998 42.6357 48.7144 44.173H48.7643V40.9075H41.2781C41.3759 43.0205 41.2775 63.4312 41.2775 63.4312L41.2777 63.4304Z" fill="white"/>
-              </svg>
-            </a>
-          </button>
-
-          <button class="group transition-all duration-500 hover:-translate-y-2">
-            <a href="mailto:kathleenpacinojavier@gmail.com" target="_blank">
-              <svg width="48" height="48" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.638672" y="0.5" width="90.5618" height="90.5618" rx="14.5" fill="white" stroke="#C4CFE3"/>
-              <path d="M22.0065 66.1236H30.4893V45.5227L18.3711 36.4341V62.4881C18.3711 64.4997 20.001 66.1236 22.0065 66.1236Z" fill="#4285F4"/>
-              <path d="M59.5732 66.1236H68.056C70.0676 66.1236 71.6914 64.4937 71.6914 62.4881V36.4341L59.5732 45.5227" fill="#34A853"/>
-              <path d="M59.5732 29.7693V45.5229L71.6914 36.4343V31.587C71.6914 27.0912 66.5594 24.5282 62.9663 27.2245" fill="#FBBC04"/>
-              <path d="M30.4893 45.5227V29.769L45.0311 40.6754L59.5729 29.769V45.5227L45.0311 56.429" fill="#EA4335"/>
-              <path d="M18.3711 31.587V36.4343L30.4893 45.5229V29.7693L27.0962 27.2245C23.4971 24.5282 18.3711 27.0912 18.3711 31.587Z" fill="#C5221F"/>
-              </svg>
-            </a>
-          </button>
-        </div>
       </div>
     </div>
-  </div>
+  </footer>
 
-  <!-- why choose -->
-  <div class="mx-auto mt-11 max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="py-3 flex items-center text-3xl font-bold text-pink before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-pink dark:before:border-neutral-600 dark:after:border-neutral-600 mb-3">Why Choose me</div>
+  <!-- That sky event Modal -->
+  <div id="sky-modal"
+         class="fixed inset-0 z-50 hidden"
+         role="dialog" aria-modal="true"
+         aria-labelledby="sky-modal-title">
 
-    <div class="grid mb-8 border border-gray-200 rounded-lg shadow-xs dark:border-light-pink md:mb-12 md:grid-cols-2 bg-white dark:bg-dark-pink">
-      <!-- responsive -->
-      <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-light-pink dark:border-pink">
-        <figcaption class="flex items-center justify-center ">
-          <img 
-          class="rounded-full md:w-40 md:h-40" 
-          src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/responsive.png?updatedAt=1739032582127" 
-          alt="profile picture">
-        </figcaption>   
-        <blockquote class="max-w-2xl mx-auto mb-4 text-black lg:mb-8 dark:text-black">
-            <h3 class="text-xl font-bold text-pink dark:text-pink">Responsive Design</h3>
-            <p class="my-4 text-lg">I build websites that look great on all devices – phones, tablets, and computers.  Your site will be easy to use and look professional, no matter where your visitors are viewing it.</p>
-        </blockquote>
-      </figure>
+    <!-- Backdrop for blur-->
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm animate-fade-in" 
+          onclick="closeCaseStudy('sky-modal')"></div>
 
-      <!-- qa -->
-      <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-light-pink dark:border-pink">
-        <figcaption class="flex items-center justify-center ">
-          <img 
-          class="rounded-full md:w-40 md:h-40" 
-          src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/quality-assurance.png?updatedAt=1739032582113" 
-          alt="profile picture">
-        </figcaption>   
-        <blockquote class="max-w-2xl mx-auto mb-4 text-black lg:mb-8 dark:text-black">
-            <h3 class="text-xl font-bold text-pink dark:text-pink">Thorough Testing</h3>
-            <p class="my-4 text-lg">I carefully test every website I build to find and fix any problems before they reach your users. This ensures a smooth and reliable experience for everyone.</p>
-        </blockquote>
-      </figure>
-
-      <!-- clean -->
-      <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-light-pink dark:border-pink">
-        <figcaption class="flex items-center justify-center ">
-          <img 
-          class="rounded-full md:w-40 md:h-40" 
-          src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/clean-code.png?updatedAt=1739032582201" 
-          alt="profile picture">
-        </figcaption>   
-        <blockquote class="max-w-2xl mx-auto mb-4 text-black lg:mb-8 dark:text-black">
-            <h3 class="text-xl font-bold text-pink dark:text-pink">Clean Code</h3>
-            <p class="my-4 text-lg">I write clean, well-organized code that's easy to understand and maintain. This makes future updates and changes much simpler and more efficient.</p>
-        </blockquote>
-      </figure>
-
-      <!-- collab -->
-      <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-light-pink dark:border-pink">
-        <figcaption class="flex items-center justify-center ">
-          <img 
-          class="rounded-full md:w-40 md:h-40" 
-          src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/collaboration.png?updatedAt=1739032581992" 
-          alt="profile picture">
-        </figcaption>   
-        <blockquote class="max-w-2xl mx-auto mb-4 text-black lg:mb-8 dark:text-black">
-            <h3 class="text-xl font-bold text-pink dark:text-pink">Collaborative Approach</h3>
-            <p class="my-4 text-lg">I work closely with clients throughout the entire process, ensuring your vision is realized.  Open communication and collaboration are key to creating a successful website.</p>
-        </blockquote>
-      </figure>
-    </div>
-
-  </div>
-
-  <div class=" bg-dark-pink">
-    <div class="max-w-2xl mx-auto text-white py-10">
-        <div class="text-center">
-            <h3 class="text-3xl mb-3"> Have a project in mind? </h3>
-            <p> Send me an email! </p>
-            <div class="flex justify-center my-10">
-                <div class="flex items-center border w-auto rounded-lg px-4 py-2 w-52 mx-2">
-                    <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/resume-icon?updatedAt=1740107459436" class="w-14 md:w-14">
-                    <div class="text-left ml-3">
-                        <p class='text-xs text-gray-200'>Explore my Background</p>
-                        <p class="text-sm md:text-base"> View Resume </p>
+    <!-- Modal Panel -->
+    <div class="relative m-4 lg:m-0 lg:mx-auto lg:my-8 w-full max-w-4xl rounded-3xl bg-white shadow-2xl flex flex-col animate-slide-in border border-gray-200">       
+        <!-- Header with gradient -->
+        <header class="text-bg px-8 py-6 rounded-t-3xl">
+            <div class="flex items-start justify-between gap-4">
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-2">
+                      <!-- icon -->
+                      <div class="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                          <i data-lucide="calendar" class="w-4 h-4"></i>
+                      </div>
+                      <!-- title -->
+                      <div>
+                          <h3 id="sky-modal-title" class="text-primary text-2xl font-bold">
+                              That Sky Events
+                          </h3>
+                          <p class="text-primary text-sm">Event Calendar</p>
+                      </div>
                     </div>
                 </div>
+                <button
+                    class="text-primary hover:text-bg transition-colors p-2 hover:bg-white/10 rounded-full"
+                    onclick="closeCaseStudy('sky-modal')"
+                    aria-label="Close">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
             </div>
-        </div>
-        <div class="mt-8 flex flex-col md:flex-row md:justify-center items-center text-sm text-white>
-            <p class="order-2 md:order-1 mt-4 md:mt-0"> &copy; Kathleen Javier, 2025 </p>
+        </header>
+
+        <!-- Body -->
+        <div class="flex-1 overflow-y-auto custom-scrollbar max-h-[70vh]">
+            <div class="px-8 py-6 space-y-8">
+                
+                <!-- Challenge & Solution Row -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-red-50 rounded-2xl p-6 border border-red-100 hover-lift">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+                                <i data-lucide="alert-triangle" class="w-4 h-4 text-bg"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold text-red-800">The Challenge</h4>
+                        </div>
+                        <p class="text-red-700 leading-relaxed">
+                            Sky: Children of the Light players were constantly missing limited-time events and seasonal activities. The community relied on scattered Discord messages and Reddit posts to stay informed, creating friction and missed opportunities.
+                        </p>
+                    </div>
+
+                    <div class="bg-blue-50 rounded-2xl p-6 border border-blue-100 hover-lift">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                                <i data-lucide="lightbulb" class="w-4 h-4 text-bg"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold text-blue-800">The Solution</h4>
+                        </div>
+                        <p class="text-blue-700 leading-relaxed">
+                            A centralized, mobile-optimized web app that aggregates all Sky events in real-time. Players can quickly check what's happening today, plan for upcoming events, and never miss another seasonal celebration.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Technical Implementation -->
+                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 hover-lift">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center">
+                            <i data-lucide="code" class="w-4 h-4 text-bg"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-primary">Technical Implementation</h4>
+                    </div>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div class="bg-white p-4 rounded-xl border border-gray-200">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="smartphone" class="w-4 h-4 text-indigo-600"></i>
+                                <span class="font-medium text-primary">Frontend</span>
+                            </div>
+                            <p class="text-sm text-primary">JavaScript, HTML5, CSS3</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-gray-200">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="database" class="w-4 h-4 text-orange-600"></i>
+                                <span class="font-medium text-primary">Database</span>
+                            </div>
+                            <p class="text-sm text-primary">Firebase Realtime DB</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-gray-200">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="globe" class="w-4 h-4 text-green-600"></i>
+                                <span class="font-medium text-primary">Hosting</span>
+                            </div>
+                            <p class="text-sm text-primary">Netlify with CI/CD</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-gray-200">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="image" class="w-4 h-4 text-purple-600"></i>
+                                <span class="font-medium text-primary">Images</span>
+                            </div>
+                            <p class="text-sm text-primary">ImageKit optimization</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-gray-200">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="palette" class="w-4 h-4 text-pink-600"></i>
+                                <span class="font-medium text-primary">Design</span>
+                            </div>
+                            <p class="text-sm text-primary">Custom UI/UX</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-gray-200">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="zap" class="w-4 h-4 text-yellow-600"></i>
+                                <span class="font-medium text-primary">Performance</span>
+                            </div>
+                            <p class="text-sm text-primary">90+ Lighthouse scores</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impact & Results -->
+                <div class="success-gradient rounded-2xl p-6 text-primary hover-lift">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
+                            <i data-lucide="trending-up" class="w-4 h-4 text-bg"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold">Impact & Results</h4>
+                    </div>
+                    <div class="grid sm:grid-cols-3 gap-4">
+                        <div class="bg-white/20 rounded-xl p-4 text-center">
+                            <div class="text-2xl font-bold text-green-700 mb-1">400+</div>
+                            <div class="text-sm text-green-600">Active Users</div>
+                            <div class="text-xs text-green-500 mt-1">First Month</div>
+                        </div>
+                        <div class="bg-white/20 rounded-xl p-4 text-center">
+                            <div class="text-2xl font-bold text-green-700 mb-1">40%</div>
+                            <div class="text-sm text-green-600">Reduction</div>
+                            <div class="text-xs text-green-500 mt-1">Event Questions</div>
+                        </div>
+                        <div class="bg-white/20 rounded-xl p-4 text-center">
+                            <div class="text-2xl font-bold text-green-700 mb-1">90+</div>
+                            <div class="text-sm text-green-600">Lighthouse</div>
+                            <div class="text-xs text-green-500 mt-1">All Categories</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Features -->
+                <div class="bg-indigo-50 rounded-2xl p-6 border border-indigo-100 hover-lift">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center">
+                            <i data-lucide="star" class="w-4 h-4 text-bg"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-indigo-800">Key Features</h4>
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-3">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                            <span class="text-indigo-700">Real-time event updates</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                            <span class="text-indigo-700">Mobile-first responsive design</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                            <span class="text-indigo-700">Visual event calendar</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                            <span class="text-indigo-700">Optimized loading speeds</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                            <span class="text-indigo-700">Intuitive event cards</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                            <span class="text-indigo-700">Cross-platform compatibility</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="text-center pt-2">
+                    <a rel="noopener" href="https://thatskyevents.netlify.app/"
+                        target="_blank"
+                        class="inline-flex items-center gap-2 px-8 py-4 bg-indigo-600 text-bg rounded-xl
+                              hover:bg-indigo-700 transition-all duration-300 font-semibold text-lg
+                              shadow-lg hover:shadow-xl hover:scale-105">
+                        <i data-lucide="external-link" class="w-5 h-5"></i>
+                        Explore Live Project
+                    </a>
+                    <p class="text-sm text-gray-500 mt-3">
+                        View the complete project and experience the interface firsthand
+                    </p>
+                </div>
+
+            </div>
         </div>
     </div>
   </div>
-  
-  
-  <!-- </div> -->
 
   <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    // Initialize Lucide icons
     lucide.createIcons();
-  </script>
 
+    // Scroll to top function
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+    
+    // Add scroll effect to back to top button
+    window.addEventListener('scroll', function() {
+        const scrollButton = document.querySelector('.scroll-top');
+        if (window.scrollY > 300) {
+            scrollButton.style.opacity = '1';
+            scrollButton.style.transform = 'translateY(0)';
+        } else {
+            scrollButton.style.opacity = '0.7';
+            scrollButton.style.transform = 'translateY(10px)';
+        }
+    });
+
+    // Initialize scroll button state
+    document.addEventListener('DOMContentLoaded', function() {
+        const scrollButton = document.querySelector('.scroll-top');
+        scrollButton.style.opacity = '0.7';
+        scrollButton.style.transform = 'translateY(10px)';
+    });
+    
+    // Modal functions
+    function openCaseStudy(modalId) {
+        const modal = document.getElementById(modalId);
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeCaseStudy(modalId) {
+        const modal = document.getElementById(modalId);
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    }
+    
+    // Close modal on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeCaseStudy('sky-modal');
+        }
+    });
+
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Animate left border
+                const contentLine = entry.target.querySelector('.content-line');
+                if (contentLine) {
+                    contentLine.style.height = '100%';
+                }
+
+                // Animate stagger elements
+                const staggerElements = entry.target.querySelectorAll('.animate-in');
+                staggerElements.forEach(element => {
+                    element.classList.remove('opacity-0', 'translate-y-5');
+                    element.classList.add('opacity-100', 'translate-y-0');
+                });
+            }
+        });
+    }, observerOptions);
+
+    // Observe the section
+    document.addEventListener('DOMContentLoaded', () => {
+        const section = document.querySelector('section');
+        if (section) {
+            observer.observe(section);
+        }
+    });
+
+    // Add smooth scroll behavior for any internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Add hover effects to cards
+    document.querySelectorAll('.service-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-8px) scale(1.02)';
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0) scale(1)';
+        });
+    });
+    
+  </script>
 
 </body>
 
@@ -819,10 +1488,10 @@
     tabButtons.forEach((button) => {
       button.addEventListener("click", () => {
         tabButtons.forEach(btn => {
-          btn.classList.remove("active-tab", "bg-accent", "text-white");
+          btn.classList.remove("active-tab", "bg-accent", "text-bg");
         });
 
-        button.classList.add("active-tab", "bg-accent", "text-white");
+        button.classList.add("active-tab", "bg-accent", "text-bg");
 
         const selectedTab = button.getAttribute("data-tab");
         showProjects(selectedTab);
@@ -853,4 +1522,5 @@
     showProjects(defaultTab);
   });
 </script>
+
 </html>
