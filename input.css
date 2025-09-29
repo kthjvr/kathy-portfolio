@@ -7,6 +7,7 @@
     --color-bg: #ebf0f6;
     --color-surface: #dfe9f5;
     --color-text: #2E2A32;
+    --color-white: #FFFF;
 }
 
 /* ===== KEYFRAME ANIMATIONS ===== */
@@ -578,11 +579,6 @@
 
 .project-list-item:hover {
     transform: translateX(8px);
-}
-
-.project-list-item.active {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(30, 64, 175, 0.05));
-    border-left: 4px solid var(--color-accent);
 }
 
 .divider {
