@@ -130,7 +130,7 @@
             >Contact</a
           >
           <a
-            href="/resume.pdf"
+            href="https://kthjvr.github.io/kathy-portfolio/resume.pdf"
             class="block rounded-md px-3 py-2 text-base font-medium text-surface hover:bg-accent hover:text-surface bg-pink"
             >Resume</a
           >
@@ -1766,11 +1766,11 @@
             <h3
                 class="text-xl font-bold text-accent group-hover:text-green-700 transition-colors duration-300"
             >
-                Audio Transcription & Data Labeling Specialist
+                Audio Transcription & Data Labeling
             </h3>
             <span
                 class="text-sm text-gray-500 bg-green-50 px-3 py-1 rounded-full font-medium"
-                >July 2025 - Present</span
+                >July 2025 - January 2026</span
             >
             </div>
             <div class="flex items-center gap-2 mb-4">
@@ -1837,7 +1837,7 @@
             <a
               rel="noopener"
               target="_blank"
-              href="/resume.pdf"
+              href="https://kthjvr.github.io/kathy-portfolio/resume.pdf"
               class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-bg rounded-2xl font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 group"
             >
               <i
@@ -2995,8 +2995,6 @@
         });
       });
     </script>
-  </body>
-
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const mobileMenuButton = document.querySelector(
@@ -3007,13 +3005,9 @@
       const closeIcon = mobileMenuButton.querySelector(".hidden"); // Select the close icon
 
       // Initially hide the mobile menu on larger screens
-      const isLargeScreen = window.matchMedia("(min-width: 640px)").matches; // Adjust breakpoint as needed.
-      if (isLargeScreen) {
-        mobileMenu.classList.add("hidden");
-        openIcon.classList.remove("hidden");
-      } else {
-        openIcon.classList.add("hidden");
-      }
+      mobileMenu.classList.add("hidden");
+      openIcon.classList.remove("hidden");
+      closeIcon.classList.add("hidden");
 
       mobileMenuButton.addEventListener("click", function () {
         mobileMenu.classList.toggle("hidden");
@@ -3103,4 +3097,5 @@
       showProjects(defaultTab);
     });
   </script>
+  </body>
 </html>

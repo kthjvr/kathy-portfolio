@@ -1,0 +1,345 @@
+  <section id="techs" class="mx-auto mt-4 max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+      <!-- Header -->
+      <div class="text-center mb-12 animate-slide-in-up">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-accent font-medium text-sm mb-4">
+              <i data-lucide="zap" class="w-4 h-4"></i>
+              Technical Expertise
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">
+              Technologies & 
+              <span class="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                  Skills
+              </span>
+          </h1>
+          <p class="text-lg text-primary max-w-2xl mx-auto leading-relaxed">
+              A comprehensive toolkit of modern technologies I leverage to create exceptional digital experiences and ensure robust quality assurance.
+          </p>
+      </div>
+
+      <!-- Skills Overview Stats -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 animate-scale-in delay-100">
+              <div class="flex items-center justify-between mb-4">
+                  <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                      <i data-lucide="code" class="w-6 h-6 text-accent"></i>
+                  </div>
+                  <span class="text-2xl font-bold text-accent">12+</span>
+              </div>
+              <h3 class="font-semibold text-primary mb-2">Development Tools</h3>
+              <p class="text-sm text-primary">Frontend, backend, and design technologies</p>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 animate-scale-in delay-200">
+              <div class="flex items-center justify-between mb-4">
+                  <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+                      <i data-lucide="shield-check" class="w-6 h-6 text-green-600"></i>
+                  </div>
+                  <span class="text-2xl font-bold text-green-600">8+</span>
+              </div>
+              <h3 class="font-semibold text-primary mb-2">QA & Testing</h3>
+              <p class="text-sm text-primary">Automation and quality assurance tools</p>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 animate-scale-in delay-300">
+              <div class="flex items-center justify-between mb-4">
+                  <div class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center">
+                      <i data-lucide="layers" class="w-6 h-6 text-cyan-600"></i>
+                  </div>
+                  <span class="text-2xl font-bold text-cyan-600">Full-Stack</span>
+              </div>
+              <h3 class="font-semibold text-primary mb-2">Expertise Level</h3>
+              <p class="text-sm text-primary">End-to-end development & testing</p>
+          </div>
+      </div>
+
+      <!-- Technology Stacks -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Development Stack -->
+          <div class="bg-white rounded-3xl p-8 shadow-xl border border-gray-200 animate-slide-in-up delay-100">
+              <div class="text-center mb-8">
+                  <div class="inline-flex items-center gap-3 px-6 py-3 text-accent rounded-2xl mb-4">
+                      <i data-lucide="laptop" class="w-6 h-6"></i>
+                      <h3 class="text-xl font-bold">Development</h3>
+                  </div>
+                  <p class="text-primary">Building modern web applications and user interfaces</p>
+              </div>
+
+              <div class="tech-grid grid grid-cols-4 gap-6">
+                  <!-- HTML5 -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-200">
+                      <div class="skill-level skill-expert"></div>
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/html5.png?updatedAt=1751707824416" 
+                                alt="HTML5" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">HTML5</h4>
+                              <p class="text-xs text-primary mt-1">Markup</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- CSS3 -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-300">
+                      <div class="skill-level skill-expert"></div>
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/css.png?updatedAt=1751707823354" 
+                                alt="CSS3" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">CSS3</h4>
+                              <p class="text-xs text-primary mt-1">Styling</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- JavaScript -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-400">
+                      <div class="skill-level skill-expert"></div>
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/javascript.png?updatedAt=1751707823373" 
+                                alt="JavaScript" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">JavaScript</h4>
+                              <p class="text-xs text-primary mt-1">Programming</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- React -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-500">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/react.png?updatedAt=1751707819232" 
+                                alt="React" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">React</h4>
+                              <p class="text-xs text-primary mt-1">Library</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- Tailwind CSS -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-600">
+                      <div class="skill-level skill-expert"></div>
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/tailwindcss.png?updatedAt=1751707823401" 
+                                alt="Tailwind CSS" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Tailwind</h4>
+                              <p class="text-xs text-primary mt-1">Framework</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- PHP -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-700">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/php.png?updatedAt=1751707823198" 
+                                alt="PHP" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">PHP</h4>
+                              <p class="text-xs text-primary mt-1">Backend</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- MySQL -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-blue-50 to-teal-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-800">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/mysql.png?updatedAt=1751707823227" 
+                                alt="MySQL" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">MySQL</h4>
+                              <p class="text-xs text-primary mt-1">Database</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-teal-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- Firebase -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-900">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/firebase.png?updatedAt=1751707819137" 
+                                alt="Firebase" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Firebase</h4>
+                              <p class="text-xs text-primary mt-1">Platform</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-teal-50 to-green-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-1000">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/netlify.png?updatedAt=1751707819271" 
+                                alt="Netlify" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Netlify</h4>
+                              <p class="text-xs text-primary mt-1">Hosting</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-teal-500 to-green-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-1100">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/canva.png?updatedAt=1751707821867" 
+                                alt="Canva" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Canva</h4>
+                              <p class="text-xs text-primary mt-1">Design</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-1200">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/figma.png?updatedAt=1751707820594" 
+                                alt="Figma" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Figma</h4>
+                              <p class="text-xs text-primary mt-1">Design</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-1300">
+                      <div class="skill-level skill-expert"></div>
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/image-removebg-preview%20(3).png?updatedAt=1751707817997" 
+                                alt="VS Code" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">VS Code</h4>
+                              <p class="text-xs text-primary mt-1">Editor</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Quality Assurance Stack -->
+          <div class="bg-white rounded-3xl p-8 shadow-xl border border-gray-200 animate-slide-in-up delay-200">
+              <div class="text-center mb-8">
+                  <div class="inline-flex items-center gap-3 px-6 py-3 text-accent rounded-2xl mb-4">
+                      <i data-lucide="shield-check" class="w-6 h-6"></i>
+                      <h3 class="text-xl font-bold">Quality Assurance</h3>
+                  </div>
+                  <p class="text-primary">Ensuring robust testing and quality validation</p>
+              </div>
+
+              <div class="tech-grid grid grid-cols-4 gap-6">
+                  <!-- Selenium -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-400">
+                      <div class="skill-level skill-expert"></div>
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/selenium.png?updatedAt=1751707823378" 
+                                alt="Selenium" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Selenium</h4>
+                              <p class="text-xs text-primary mt-1">Automation</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- Playwright -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-500">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/image-removebg-preview%20(4).png?updatedAt=1751707818049" 
+                                alt="Playwright" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Playwright</h4>
+                              <p class="text-xs text-primary mt-1">Testing</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- TypeScript -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-600">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/typescript.png?updatedAt=1751707823176" 
+                                alt="TypeScript" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">TypeScript</h4>
+                              <p class="text-xs text-primary mt-1">Language</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- Cucumber -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-400">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/cucumber.png?updatedAt=1751707822491" 
+                                alt="Cucumber" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Cucumber</h4>
+                              <p class="text-xs text-primary mt-1">Testing</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+                
+                  <!-- Docker -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-700">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/docker.png?updatedAt=1751707819242" 
+                                alt="Docker" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Docker</h4>
+                              <p class="text-xs text-primary mt-1">Containerization</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- Jira -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-600">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/jirasoftware.png?updatedAt=1751707819795" 
+                                alt="Jira" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Jira</h4>
+                              <p class="text-xs text-primary mt-1">Management</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+          
+                  <!-- Salesforce -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-400">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/salesforce.png?updatedAt=1751707819345" 
+                                alt="Salesforce" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Salesforce</h4>
+                              <p class="text-xs text-primary mt-1">CRM</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+
+                  <!-- Testomat -->
+                  <div class="tech-card relative p-4 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl shadow-lg group cursor-pointer animate-scale-in delay-600">
+                      <div class="relative z-10">
+                          <img src="https://ik.imagekit.io/e3wiv79bq/Assets-DP/New%20Assets%20for%20DP/testomatio_logo-removebg-preview.png?updatedAt=1751707819137" 
+                                alt="Testomat" class="h-16 w-16 object-contain mx-auto mb-2" />
+                          <div class="text-center">
+                              <h4 class="font-semibold text-primary text-sm">Testomat</h4>
+                              <p class="text-xs text-primary mt-1">Management</p>
+                          </div>
+                      </div>
+                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+                  </div>
+                </div>
+          </div>
+      </div>
+  </section>
